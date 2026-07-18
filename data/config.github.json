@@ -9,8 +9,7 @@
     "max_tokens": 8192,
     "throttle_sec": 1,
     "languages": [
-      "zh",
-      "en"
+      "zh"
     ],
     "analysis_concurrency": 5,
     "enrichment_concurrency": 5
@@ -20,31 +19,36 @@
       {
         "type": "user_events",
         "username": "karpathy",
-        "enabled": true
+        "enabled": true,
+        "category": "ai-research"
       },
       {
         "type": "repo_releases",
         "owner": "vllm-project",
         "repo": "vllm",
-        "enabled": true
+        "enabled": true,
+        "category": "ai-infrastructure"
       },
       {
         "type": "repo_releases",
         "owner": "sgl-project",
         "repo": "sglang",
-        "enabled": true
+        "enabled": true,
+        "category": "ai-infrastructure"
       },
       {
         "type": "repo_releases",
         "owner": "triton-lang",
         "repo": "triton",
-        "enabled": true
+        "enabled": true,
+        "category": "ai-infrastructure"
       }
     ],
     "hackernews": {
       "enabled": true,
       "fetch_top_stories": 30,
-      "min_score": 150
+      "min_score": 150,
+      "category": "ai-industry"
     },
     "rss": [
       {
@@ -60,10 +64,10 @@
         "category": "github-trending"
       },
       {
-        "name": "Semianalysis",
-        "url": "https://newsletter.semianalysis.com/feed",
+        "name": "Google Research",
+        "url": "https://research.google/blog/rss/",
         "enabled": true,
-        "category": "semiconductors"
+        "category": "ai-research"
       },
       {
         "name": "LWN.net",
@@ -81,7 +85,8 @@
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 10,
-          "min_score": 60
+          "min_score": 60,
+          "category": "ai-research"
         },
         {
           "subreddit": "LocalLLaMA",
@@ -89,7 +94,8 @@
           "sort": "hot",
           "time_filter": "day",
           "fetch_limit": 10,
-          "min_score": 60
+          "min_score": 60,
+          "category": "ai-tools"
         }
       ],
       "users": [],
@@ -101,14 +107,49 @@
         {
           "channel": "zaihuapd",
           "enabled": true,
-          "fetch_limit": 20
+          "fetch_limit": 20,
+          "category": "ai-industry"
         }
       ]
+    },
+    "google_news": {
+      "enabled": true,
+      "query": "人工智能 OR 大模型 OR AI智能体 OR 多模态 OR AI科研 OR AI编程",
+      "language": "zh-CN",
+      "country": "CN",
+      "ceid": "CN:zh-Hans",
+      "max_results": 30,
+      "category": "ai-industry"
     }
   },
   "filtering": {
     "ai_score_threshold": 8.0,
-    "time_window_hours": 24
+    "time_window_hours": 24,
+    "max_items": 12,
+    "category_groups": {
+      "research": {
+        "limit": 5,
+        "categories": [
+          "ai-research"
+        ]
+      },
+      "tools": {
+        "limit": 4,
+        "categories": [
+          "ai-tools",
+          "ai-infrastructure",
+          "github-trending"
+        ]
+      },
+      "industry": {
+        "limit": 4,
+        "categories": [
+          "ai-industry"
+        ]
+      }
+    },
+    "default_group": "other",
+    "default_group_limit": 2
   },
   "webhook": {
     "enabled": false,
