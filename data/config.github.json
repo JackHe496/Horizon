@@ -123,18 +123,19 @@
     }
   },
   "filtering": {
-    "ai_score_threshold": 8.0,
+    "ai_score_threshold": 7.0,
     "time_window_hours": 24,
-    "max_items": 12,
+    "focus": "只收录与人工智能直接相关的内容：基础模型与多模态、AI Agent、AI 编程、用于物理学习与科研的 AI 工具、重要开源项目、模型评测、安全治理和产业变化。AWS 计费、普通数据库技巧、天文学等内容如果没有明确的 AI 方法或影响，必须视为离题。目标读者是一名希望用 AI 提升物理学习和科研能力的中国物理系本科生。",
+    "max_items": 24,
     "category_groups": {
       "research": {
-        "limit": 5,
+        "limit": 8,
         "categories": [
           "ai-research"
         ]
       },
       "tools": {
-        "limit": 4,
+        "limit": 8,
         "categories": [
           "ai-tools",
           "ai-infrastructure",
@@ -142,14 +143,14 @@
         ]
       },
       "industry": {
-        "limit": 4,
+        "limit": 8,
         "categories": [
           "ai-industry"
         ]
       }
     },
     "default_group": "other",
-    "default_group_limit": 2
+    "default_group_limit": 3
   },
   "webhook": {
     "enabled": false,
