@@ -31,18 +31,44 @@ jobs:
       - name: Install dependencies
         run: uv sync
 
-      - name: Prepare GitHub Actions config
+      - name: Set report dates
+        run: |
+          echo "REPORT_DATE=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+          echo "PUBLISH_DATE=$(date +'%Y-%m-%d')" >> "$GITHUB_ENV"
+
+      - name: Prepare AI config
         run: cp data/config.github.json data/config.json
 
-      - name: Run Horizon
+      - name: Generate AI digest
         env:
-          # Map secrets to environment variables expected by config.json
-          # Modify these based on your data/config.github.json provider settings
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: uv run horizon --hours 24
 
-      - name: Set current date as environment variable
-        run: echo "DATE=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+      - name: Store AI digest in its own folder
+        run: |
+          mkdir -p docs/_posts/ai
+          source="docs/_posts/${REPORT_DATE}-summary-zh.md"
+          target="docs/_posts/ai/${REPORT_DATE}-ai-zh.md"
+          sed -i "s|^title:.*|title: \"AI 日报：${REPORT_DATE}\"|" "$source"
+          sed -i "/^lang: /a topic: ai" "$source"
+          mv "$source" "$target"
+
+      - name: Prepare condensed matter and microelectronics config
+        run: cp data/config.physics-electronics.json data/config.json
+
+      - name: Generate condensed matter and microelectronics digest
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: uv run horizon --hours 24
+
+      - name: Store physics and electronics digest in its own folder
+        run: |
+          mkdir -p docs/_posts/physics-electronics
+          source="docs/_posts/${REPORT_DATE}-summary-zh.md"
+          target="docs/_posts/physics-electronics/${REPORT_DATE}-physics-electronics-zh.md"
+          sed -i "s|^title:.*|title: \"凝聚态与微电子日报：${REPORT_DATE}\"|" "$source"
+          sed -i "/^lang: /a topic: physics-electronics" "$source"
+          mv "$source" "$target"
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
@@ -50,6 +76,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./docs
           keep_files: true  # Keep existing summaries on gh-pages branch
-          commit_message: "📝 Daily Summary: ${{ env.DATE }}"
+          commit_message: "📝 AI + Physics Daily Summary: ${{ env.PUBLISH_DATE }}"
           publish_branch: gh-pages
           enable_jekyll: true
