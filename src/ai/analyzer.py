@@ -28,8 +28,9 @@ class AnalysisResult(BaseModel):
 class ContentAnalyzer:
     """Analyzes content items using AI to determine importance."""
 
-    def __init__(self, ai_client: AIClient):
+    def __init__(self, ai_client: AIClient, focus: Optional[str] = None):
         self.client = ai_client
+        self.focus = (focus or "").strip()
 
     @staticmethod
     def _parse_json_response(response: str) -> Optional[dict]:
@@ -150,8 +151,19 @@ class ContentAnalyzer:
         )
 
         # Get AI completion
+        system_prompt = CONTENT_ANALYSIS_SYSTEM
+        if self.focus:
+            system_prompt += (
+                "\n\n**Digest-specific focus (highest priority):**\n"
+                f"{self.focus}\n\n"
+                "Relevance is a hard gate. Clearly off-topic content must score 0-2, "
+                "even if it is popular or technically interesting. Content directly "
+                "serving this focus may score highly when it is novel, consequential, "
+                "or unusually useful."
+            )
+
         response = await self.client.complete(
-            system=CONTENT_ANALYSIS_SYSTEM,
+            system=system_prompt,
             user=user_prompt,
         )
 
