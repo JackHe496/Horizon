@@ -1,0 +1,116 @@
+{
+  "version": "1.0",
+  "ai": {
+    "provider": "deepseek",
+    "model": "deepseek-v4-flash",
+    "base_url": "https://api.deepseek.com",
+    "api_key_env": "DEEPSEEK_API_KEY",
+    "temperature": 0.3,
+    "max_tokens": 8192,
+    "throttle_sec": 1,
+    "languages": [
+      "zh"
+    ],
+    "analysis_concurrency": 5,
+    "enrichment_concurrency": 5
+  },
+  "sources": {
+    "github": [],
+    "hackernews": {
+      "enabled": false,
+      "fetch_top_stories": 0,
+      "min_score": 0,
+      "category": "physics-industry"
+    },
+    "rss": [
+      {
+        "name": "arXiv Condensed Matter and Applied Physics",
+        "url": "https://rss.arxiv.org/rss/cond-mat.mtrl-sci+physics.app-ph",
+        "enabled": true,
+        "category": "condensed-matter"
+      },
+      {
+        "name": "Nature Condensed Matter Physics",
+        "url": "https://www.nature.com/subjects/condensed-matter-physics.rss",
+        "enabled": true,
+        "category": "condensed-matter"
+      },
+      {
+        "name": "Physical Review B",
+        "url": "https://feeds.aps.org/rss/recent/prb.xml",
+        "enabled": true,
+        "category": "condensed-matter"
+      },
+      {
+        "name": "Nature Electronics",
+        "url": "https://www.nature.com/natelectron.rss",
+        "enabled": true,
+        "category": "microelectronics"
+      },
+      {
+        "name": "Semiconductor Engineering",
+        "url": "https://semiengineering.com/feed/",
+        "enabled": true,
+        "category": "semiconductor-industry"
+      },
+      {
+        "name": "Semianalysis",
+        "url": "https://newsletter.semianalysis.com/feed",
+        "enabled": true,
+        "category": "semiconductor-industry"
+      }
+    ],
+    "reddit": {
+      "enabled": false,
+      "subreddits": [],
+      "users": [],
+      "fetch_comments": 0
+    },
+    "telegram": {
+      "enabled": false,
+      "channels": []
+    },
+    "google_news": {
+      "enabled": true,
+      "query": "凝聚态 OR 量子材料 OR 超导 OR 半导体 OR 微电子 OR 集成电路 OR 芯片制造 OR 光刻 OR 先进封装",
+      "language": "zh-CN",
+      "country": "CN",
+      "ceid": "CN:zh-Hans",
+      "max_results": 40,
+      "category": "semiconductor-industry"
+    }
+  },
+  "filtering": {
+    "ai_score_threshold": 8.0,
+    "time_window_hours": 24,
+    "max_items": 12,
+    "category_groups": {
+      "condensed_matter": {
+        "limit": 6,
+        "categories": [
+          "condensed-matter"
+        ]
+      },
+      "microelectronics": {
+        "limit": 6,
+        "categories": [
+          "microelectronics",
+          "semiconductor-industry",
+          "physics-industry"
+        ]
+      }
+    },
+    "default_group": "other",
+    "default_group_limit": 2
+  },
+  "webhook": {
+    "enabled": false,
+    "url_env": "HORIZON_WEBHOOK_URL",
+    "delivery": "summary",
+    "platform": "generic",
+    "layout": "markdown",
+    "languages": [
+      "zh"
+    ]
+  }
+}
