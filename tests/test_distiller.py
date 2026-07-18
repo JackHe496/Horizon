@@ -1,6 +1,10 @@
 import asyncio
 
-from src.ai.distiller import DailyReportDistiller, split_front_matter
+from src.ai.distiller import (
+    DailyReportDistiller,
+    extract_markdown_payload,
+    split_front_matter,
+)
 
 
 RAW_REPORT = """---
@@ -42,6 +46,11 @@ def test_split_front_matter():
     assert report.front_matter.startswith("---")
     assert "layout: default" in report.front_matter
     assert report.body.startswith("> 从 10 条内容")
+
+
+def test_extract_markdown_payload_from_json():
+    result = extract_markdown_payload('{"markdown":"## 今日结论\\n有效信号。"}')
+    assert result == "## 今日结论\n有效信号。"
 
 
 def test_distill_merges_synthesis_before_raw_items():
