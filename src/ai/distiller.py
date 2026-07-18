@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 from dataclasses import dataclass
 from typing import TYPE_CHECKING
 
@@ -21,6 +22,8 @@ TOPIC_PROFILES = {
 
 DISTILL_SYSTEM = """你是一名严谨的科技情报编辑和本科生导师。你的任务不是逐条复述新闻，
 而是把一份原始日报提炼成可用于判断、学习和行动的中文情报简报。
+
+请返回一个 JSON 对象，且只包含一个 markdown 字段；markdown 字段的值是完整的 Markdown 简报。
 
 要求：
 - 只使用原始日报提供的事实和链接，不编造新闻、数字、论文结论或来源。
@@ -80,6 +83,19 @@ def strip_markdown_fence(text: str) -> str:
     return cleaned
 
 
+def extract_markdown_payload(text: str) -> str:
+    """Extract Markdown from a JSON response while tolerating plain-text providers."""
+    cleaned = strip_markdown_fence(text)
+    try:
+        payload = json.loads(cleaned)
+    except (json.JSONDecodeError, TypeError):
+        return cleaned
+
+    if isinstance(payload, dict) and isinstance(payload.get("markdown"), str):
+        return strip_markdown_fence(payload["markdown"])
+    return cleaned
+
+
 def merge_distillation(report: MarkdownReport, distillation: str) -> str:
     """Place distilled analysis before the complete selected-item report."""
     front = f"{report.front_matter}\n\n" if report.front_matter else ""
@@ -117,7 +133,7 @@ class DailyReportDistiller:
             temperature=0.2,
             max_tokens=6000,
         )
-        distillation = strip_markdown_fence(response)
+        distillation = extract_markdown_payload(response)
         if "## 今日结论" not in distillation:
             raise ValueError("Distillation response is missing the required conclusion section")
         return merge_distillation(report, distillation)
