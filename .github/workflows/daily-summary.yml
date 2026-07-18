@@ -44,6 +44,14 @@ jobs:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: uv run horizon --hours 24
 
+      - name: Distill AI digest into conclusions and themes
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          uv run python scripts/distill_daily_report.py \
+            --input "docs/_posts/${REPORT_DATE}-summary-zh.md" \
+            --topic ai
+
       - name: Store AI digest in its own folder
         run: |
           mkdir -p docs/_posts/ai
@@ -60,6 +68,14 @@ jobs:
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: uv run horizon --hours 24
+
+      - name: Distill physics and electronics digest into conclusions and themes
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: |
+          uv run python scripts/distill_daily_report.py \
+            --input "docs/_posts/${REPORT_DATE}-summary-zh.md" \
+            --topic physics-electronics
 
       - name: Store physics and electronics digest in its own folder
         run: |
