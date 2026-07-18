@@ -81,18 +81,19 @@
     }
   },
   "filtering": {
-    "ai_score_threshold": 8.0,
+    "ai_score_threshold": 6.5,
     "time_window_hours": 24,
-    "max_items": 12,
+    "focus": "只收录与凝聚态物理、量子材料、超导、自旋电子学、半导体物理与器件、微电子、集成电路、芯片制造、光刻、先进封装及相关产业前景直接相关的内容。优先兼顾基础研究突破、器件工程进展和产业信号，并解释它对正在凝聚态与微电子方向之间选择的物理系本科生有什么意义。普通 AI、软件或泛科技新闻如果没有直接联系，必须视为离题。",
+    "max_items": 20,
     "category_groups": {
       "condensed_matter": {
-        "limit": 6,
+        "limit": 10,
         "categories": [
           "condensed-matter"
         ]
       },
       "microelectronics": {
-        "limit": 6,
+        "limit": 10,
         "categories": [
           "microelectronics",
           "semiconductor-industry",
