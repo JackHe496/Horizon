@@ -75,6 +75,11 @@ jobs:
             --mode "$RADAR_MODE" \
             --ai
 
+      - name: Preserve unselected feed on GitHub Pages
+        run: |
+          uv run python scripts/prepare_tools_radar_publish.py \
+            --mode "$RADAR_MODE"
+
       - name: Deploy tools radar to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:

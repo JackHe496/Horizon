@@ -4,6 +4,7 @@ import asyncio
 import json
 from pathlib import Path
 
+from scripts.prepare_tools_radar_publish import prepare_publish_dir
 from src.tools_radar.pipeline import build_radar, write_bundle
 
 
@@ -51,3 +52,25 @@ def test_daily_mode_does_not_overwrite_existing_weekly_file(tmp_path: Path):
     write_bundle(bundle, tmp_path)
 
     assert json.loads(weekly.read_text()) == {"preserved": True}
+
+
+def test_partial_publish_removes_only_the_feed_keep_files_must_preserve(
+    tmp_path: Path,
+):
+    daily = tmp_path / "daily.json"
+    weekly = tmp_path / "weekly.json"
+    daily.write_text('{"feed": "daily"}\n')
+    weekly.write_text('{"feed": "weekly"}\n')
+
+    removed = prepare_publish_dir(tmp_path, "weekly")
+
+    assert removed == [daily]
+    assert not daily.exists()
+    assert weekly.exists()
+
+    daily.write_text('{"feed": "daily"}\n')
+    removed = prepare_publish_dir(tmp_path, "daily")
+
+    assert removed == [weekly]
+    assert daily.exists()
+    assert not weekly.exists()
