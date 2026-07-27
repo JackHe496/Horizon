@@ -1,0 +1,26 @@
+---
+layout: default
+title: 每日工具流
+description: 每日更新的 AI 工具发现与观察队列
+radar: true
+permalink: /tool-stream/
+---
+
+<div class="radar-app" data-radar-mode="daily" data-data-base="{{ '/assets/data' | relative_url }}">
+  <header class="page-intro page-intro--split">
+    <div>
+      <p class="eyebrow"><span></span> DAILY SIGNAL FEED</p>
+      <h1>每日工具流</h1>
+      <p>汇集新发布、新更新和新讨论。`new` 是发现，`watch` 是待验证，不代表推荐安装。</p>
+    </div>
+    <div class="status-legend" aria-label="状态说明">
+      <span><i class="status-dot status-dot--new"></i> new · 新发现</span>
+      <span><i class="status-dot status-dot--watch"></i> watch · 观察中</span>
+      <span><i class="status-dot status-dot--verified"></i> verified · 证据已核</span>
+    </div>
+  </header>
+  <div class="tool-grid" data-radar-list="daily" aria-live="polite"></div>
+  <p class="data-updated" data-radar-updated></p>
+</div>
+
+<noscript><p class="notice">每日工具流需要启用 JavaScript。</p></noscript>

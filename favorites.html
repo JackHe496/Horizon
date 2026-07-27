@@ -1,0 +1,31 @@
+---
+layout: default
+title: 本地收藏
+description: 只保存在当前浏览器中的 AI 工具收藏
+radar: true
+permalink: /favorites/
+---
+
+<div class="radar-app" data-radar-mode="favorites" data-data-base="{{ '/assets/data' | relative_url }}">
+  <header class="page-intro page-intro--split">
+    <div>
+      <p class="eyebrow"><span></span> LOCAL-ONLY FAVORITES</p>
+      <h1>本地收藏</h1>
+      <p>收藏只保存在当前浏览器的 localStorage，不需要登录，也不会上传或遥测。</p>
+    </div>
+    <aside class="selection-note">
+      <strong>隐私提示</strong>
+      <p>清除浏览器站点数据会同时清除收藏。不同设备和浏览器之间不会同步。</p>
+    </aside>
+  </header>
+  <div class="empty-state" data-radar-empty hidden>
+    <span aria-hidden="true">☆</span>
+    <h2>还没有收藏</h2>
+    <p>在工具卡片上点击“收藏”，它会出现在这里。</p>
+    <a class="button button--primary" href="{{ '/tools/' | relative_url }}">去工具目录</a>
+  </div>
+  <div class="tool-grid" data-radar-list="favorites" aria-live="polite"></div>
+  <p class="data-updated" data-radar-updated></p>
+</div>
+
+<noscript><p class="notice">本地收藏需要启用 JavaScript 和 localStorage。</p></noscript>

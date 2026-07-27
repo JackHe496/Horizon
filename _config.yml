@@ -1,12 +1,13 @@
 theme: jekyll-theme-cayman
-title: Jack 的 Horizon 每日信息雷达
-description: AI、凝聚态物理与微电子中文日报
+title: Jack 的 Horizon AI 工具雷达
+description: 中文优先、免费优先、证据可追溯的个人 AI 工具雷达
 baseurl: "/Horizon" # the subpath of your site, e.g. /blog
 url: "https://jackhe496.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 markdown: kramdown
 future: true # Allow future posts to be published
+permalink: pretty
 plugins:
   - jekyll-feed
 feed:

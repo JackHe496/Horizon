@@ -43,6 +43,11 @@
 
   /** Set up EN/中文 language toggle as a page-level control */
   function setupLanguageToggle() {
+    var zhSection = document.getElementById('lang-zh');
+    var enSection = document.getElementById('lang-en');
+    var peer = document.body.getAttribute('data-language-peer');
+    if ((!zhSection || !enSection) && !peer) return;
+
     // Create toggle buttons
     var toggle = document.createElement('div');
     toggle.className = 'lang-toggle';
@@ -77,9 +82,6 @@
     }
 
     // Index page: toggle lang-section visibility
-    var zhSection = document.getElementById('lang-zh');
-    var enSection = document.getElementById('lang-en');
-
     function showSection(lang) {
       if (!zhSection || !enSection) return;
       if (lang === 'en') {
