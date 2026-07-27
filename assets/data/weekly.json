@@ -1,8 +1,135 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T16:27:21.178026+00:00",
+  "generated_at": "2026-07-27T16:41:43.408060+00:00",
   "period": "weekly",
   "tools": [
+    {
+      "id": "official-mcp-registry-2f02745f",
+      "name": "Official MCP Registry",
+      "name_zh": "官方 MCP Registry",
+      "summary_zh": "Model Context Protocol 官方社区注册服务，提供服务器元数据与版本信息。",
+      "use_case_zh": "发现 MCP 服务并回溯包、仓库、远程端点和发布状态。",
+      "homepage": "https://registry.modelcontextprotocol.io/docs",
+      "repository": "",
+      "category": "codex-ecosystem",
+      "kind": "platform",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "Registry 验证发布身份与元数据，但不等于对服务器行为做安全背书。",
+      "install": {
+        "method": "registry",
+        "command": "",
+        "note_zh": "仅用于发现；实际 MCP 安装或连接需单独确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "MCP-compatible clients"
+      ],
+      "tags": [
+        "MCP",
+        "Registry",
+        "Metadata",
+        "Official Registry"
+      ],
+      "aliases": [
+        "agency.kesey/pretrip",
+        "ai.aetherwealth/mcp"
+      ],
+      "community_signals": {
+        "official_registry": 1,
+        "registry_official": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Model Context Protocol",
+          "url": "https://registry.modelcontextprotocol.io/docs",
+          "evidence_type": "official-registry",
+          "captured_at": "2026-07-27T16:41:16.087804Z",
+          "excerpt": "官方 MCP Registry 参考文档。"
+        },
+        {
+          "source_id": "mcp-registry",
+          "source_name": "Official MCP Registry",
+          "url": "https://registry.modelcontextprotocol.io/docs",
+          "evidence_type": "registry",
+          "captured_at": "2026-07-27T16:41:16.597950Z",
+          "excerpt": "ai.aetherwealth/mcp · version 0.2.2。"
+        }
+      ],
+      "discovered_at": "2025-09-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 2,
+      "score": 111.51
+    },
+    {
+      "id": "anthropic-agent-skills-edf04ead",
+      "name": "Anthropic Agent Skills",
+      "name_zh": "Anthropic Agent Skills",
+      "summary_zh": "Anthropic 公开的 Agent Skills 示例与文档处理技能集合。",
+      "use_case_zh": "学习 Skill 结构，或挑选经过官方维护的文档、表格与演示工作流。",
+      "homepage": "https://github.com/anthropics/skills",
+      "repository": "https://github.com/anthropics/skills",
+      "category": "codex-ecosystem",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 可能调用脚本和工具；即使来源官方也要先审阅范围。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add anthropics/skills",
+        "note_zh": "仅供复制；具体 Skill 的安装必须先明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Agent Skills compatible clients",
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skills",
+        "Documents",
+        "Examples",
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "frontend-design"
+      ],
+      "community_signals": {
+        "official_repo": 1,
+        "skills_sh_rank": 2
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Anthropic Skills",
+          "url": "https://github.com/anthropics/skills",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T16:41:16.092927Z",
+          "excerpt": "Anthropic 官方 Agent Skills 仓库。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/anthropics/skills/frontend-design",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-07-27T16:41:17.093613Z",
+          "excerpt": "公开排行榜第 2 个发现信号。"
+        }
+      ],
+      "discovered_at": "2025-10-16T00:00:00Z",
+      "updated_at": "2026-07-27T16:41:17.093671Z",
+      "source_count": 2,
+      "score": 108.95
+    },
     {
       "id": "duckdb-7ebe3171",
       "name": "DuckDB",
@@ -46,7 +173,7 @@
           "source_name": "DuckDB",
           "url": "https://github.com/duckdb/duckdb",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.176819Z",
+          "captured_at": "2026-07-27T16:41:16.106754Z",
           "excerpt": "DuckDB 官方开源仓库。"
         }
       ],
@@ -54,105 +181,6 @@
       "updated_at": "2026-07-27T00:00:00Z",
       "source_count": 1,
       "score": 108.75
-    },
-    {
-      "id": "mcp-inspector-2984950f",
-      "name": "MCP Inspector",
-      "name_zh": "MCP 检查器",
-      "summary_zh": "用于调试和检查 MCP 服务器能力、资源、提示词与工具调用的官方开发工具。",
-      "use_case_zh": "在接入客户端前本地核对 MCP 暴露了什么能力。",
-      "homepage": "https://github.com/modelcontextprotocol/inspector",
-      "repository": "https://github.com/modelcontextprotocol/inspector",
-      "category": "codex-ecosystem",
-      "kind": "mcp",
-      "pricing": "free",
-      "status": "verified",
-      "maturity": "stable",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "调试时会连接目标 MCP；不要向不可信服务提供生产密钥。",
-      "install": {
-        "method": "npm",
-        "command": "npx @modelcontextprotocol/inspector",
-        "note_zh": "官方启动命令，仅供复制；执行前必须明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Node.js",
-        "MCP servers"
-      ],
-      "tags": [
-        "MCP",
-        "Debugging",
-        "Inspector"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "official_repo": 1
-      },
-      "evidence": [
-        {
-          "source_id": "curated",
-          "source_name": "MCP Inspector",
-          "url": "https://github.com/modelcontextprotocol/inspector",
-          "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.173016Z",
-          "excerpt": "Model Context Protocol 官方检查器仓库。"
-        }
-      ],
-      "discovered_at": "2024-11-25T00:00:00Z",
-      "updated_at": "2026-07-27T00:00:00Z",
-      "source_count": 1,
-      "score": 105.75
-    },
-    {
-      "id": "official-mcp-registry-2f02745f",
-      "name": "Official MCP Registry",
-      "name_zh": "官方 MCP Registry",
-      "summary_zh": "Model Context Protocol 官方社区注册服务，提供服务器元数据与版本信息。",
-      "use_case_zh": "发现 MCP 服务并回溯包、仓库、远程端点和发布状态。",
-      "homepage": "https://registry.modelcontextprotocol.io/docs",
-      "repository": "",
-      "category": "codex-ecosystem",
-      "kind": "platform",
-      "pricing": "free",
-      "status": "verified",
-      "maturity": "beta",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "Registry 验证发布身份与元数据，但不等于对服务器行为做安全背书。",
-      "install": {
-        "method": "registry",
-        "command": "",
-        "note_zh": "仅用于发现；实际 MCP 安装或连接需单独确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "MCP-compatible clients"
-      ],
-      "tags": [
-        "MCP",
-        "Registry",
-        "Metadata"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "official_registry": 1
-      },
-      "evidence": [
-        {
-          "source_id": "curated",
-          "source_name": "Model Context Protocol",
-          "url": "https://registry.modelcontextprotocol.io/docs",
-          "evidence_type": "official-registry",
-          "captured_at": "2026-07-27T16:27:21.172799Z",
-          "excerpt": "官方 MCP Registry 参考文档。"
-        }
-      ],
-      "discovered_at": "2025-09-01T00:00:00Z",
-      "updated_at": "2026-07-27T00:00:00Z",
-      "source_count": 1,
-      "score": 105.75
     },
     {
       "id": "openai-plugins-879267df",
@@ -166,9 +194,9 @@
       "kind": "platform",
       "pricing": "free",
       "status": "verified",
-      "maturity": "stable",
+      "maturity": "mature",
       "maintenance": "active",
-      "permission_risk": "medium",
+      "permission_risk": "high",
       "risk_note_zh": "目录本身公开；各插件可能绑定外部连接器，权限需逐个检查。",
       "install": {
         "method": "directory",
@@ -178,16 +206,67 @@
       },
       "compatibility": [
         "Codex",
-        "ChatGPT"
+        "ChatGPT",
+        "macOS",
+        "Linux",
+        "Windows",
+        "Web"
       ],
       "tags": [
         "Codex Plugin",
         "OpenAI",
-        "Marketplace"
+        "Marketplace",
+        "Research",
+        "References",
+        "Learning",
+        "Developer Tools",
+        "Data & Analytics",
+        "Productivity",
+        "Education & Research",
+        "Creativity",
+        "Communication"
       ],
-      "aliases": [],
+      "aliases": [
+        "build-web-apps",
+        "build-web-data-visualization",
+        "cloudflare",
+        "coderabbit",
+        "deepnote",
+        "github",
+        "google-drive",
+        "hugging-face",
+        "netlify",
+        "notion",
+        "plugin-eval",
+        "sentry",
+        "vercel",
+        "zotero",
+        "figma",
+        "airtable",
+        "alation",
+        "amplitude",
+        "asana",
+        "atlassian-rovo",
+        "base44",
+        "boltz-api-cli",
+        "box",
+        "brand24",
+        "brighthire",
+        "build-ios-apps",
+        "build-macos-apps",
+        "calendly",
+        "catalyst-by-zoho",
+        "channel99",
+        "circleback",
+        "circleci",
+        "clickup",
+        "cloudinary",
+        "common-room",
+        "conductor"
+      ],
       "community_signals": {
-        "official_curated": 1
+        "official_curated": 1,
+        "official_repo": 1
       },
       "evidence": [
         {
@@ -195,14 +274,310 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.172465Z",
+          "captured_at": "2026-07-27T16:41:16.085958Z",
           "excerpt": "每个插件包含 .codex-plugin/plugin.json 清单。"
+        },
+        {
+          "source_id": "curated",
+          "source_name": "Zotero",
+          "url": "https://github.com/zotero/zotero",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T16:41:16.102060Z",
+          "excerpt": "Zotero 官方开源仓库。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/build-web-apps",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.758640Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/build-web-data-visualization",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.744196Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/cloudflare",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.756224Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/coderabbit",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.745439Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/deepnote",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.732604Z",
+          "excerpt": "OpenAI curated marketplace；分类 Data & Analytics。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/github",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.763586Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/google-drive",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.757498Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/hugging-face",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:16.733923Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/netlify",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.123640Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/notion",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.126357Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/plugin-eval",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.131505Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/sentry",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.122384Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/vercel",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.129031Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/zotero",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.130355Z",
+          "excerpt": "OpenAI curated marketplace；分类 Education & Research。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/figma",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.125129Z",
+          "excerpt": "OpenAI curated marketplace；分类 Creativity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/airtable",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.127620Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/alation",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.363552Z",
+          "excerpt": "OpenAI curated marketplace；分类 Data & Analytics。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/amplitude",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.459559Z",
+          "excerpt": "OpenAI curated marketplace；分类 Data & Analytics。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/asana",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.322931Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/atlassian-rovo",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.394389Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/base44",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.265684Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/boltz-api-cli",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.307336Z",
+          "excerpt": "OpenAI curated marketplace；分类 Education & Research。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/box",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.470601Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/brand24",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.304596Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/brighthire",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.611123Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/build-ios-apps",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.558689Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/build-macos-apps",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.586858Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/calendly",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.486976Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/catalyst-by-zoho",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.607995Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/channel99",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.550750Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/circleback",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.644532Z",
+          "excerpt": "OpenAI curated marketplace；分类 Communication。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/circleci",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.612954Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/clickup",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.640331Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/cloudinary",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.787851Z",
+          "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/common-room",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.808739Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
+        },
+        {
+          "source_id": "openai-plugins",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins/tree/main/plugins/conductor",
+          "evidence_type": "official-marketplace",
+          "captured_at": "2026-07-27T16:41:17.957990Z",
+          "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         }
       ],
-      "discovered_at": "2026-03-01T00:00:00Z",
-      "updated_at": "2026-07-27T00:00:00Z",
-      "source_count": 1,
-      "score": 105.75
+      "discovered_at": "2006-10-01T00:00:00Z",
+      "updated_at": "2026-07-27T16:41:17.958052Z",
+      "source_count": 2,
+      "score": 108.51
     },
     {
       "id": "pydanticai-16da7244",
@@ -244,7 +619,7 @@
           "source_name": "PydanticAI",
           "url": "https://github.com/pydantic/pydantic-ai",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.175490Z",
+          "captured_at": "2026-07-27T16:41:16.100135Z",
           "excerpt": "Pydantic 官方 Agent 框架仓库。"
         }
       ],
@@ -296,7 +671,7 @@
           "source_name": "Astral uv",
           "url": "https://github.com/astral-sh/uv",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.177382Z",
+          "captured_at": "2026-07-27T16:41:16.109624Z",
           "excerpt": "Astral 官方 uv 开源仓库。"
         }
       ],
@@ -349,7 +724,7 @@
           "source_name": "Context7",
           "url": "https://github.com/upstash/context7",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.173610Z",
+          "captured_at": "2026-07-27T16:41:16.091847Z",
           "excerpt": "Context7 官方开源仓库与接入说明。"
         },
         {
@@ -357,7 +732,7 @@
           "source_name": "LINUX.DO",
           "url": "https://linux.do/t/topic/702108",
           "evidence_type": "community-discussion",
-          "captured_at": "2026-07-27T16:27:21.173648Z",
+          "captured_at": "2026-07-27T16:41:16.092053Z",
           "excerpt": "中文社区的 Context7 使用演示与讨论；社区信号不等于安全背书。"
         }
       ],
@@ -409,7 +784,7 @@
           "source_name": "Aider",
           "url": "https://github.com/Aider-AI/aider",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.174057Z",
+          "captured_at": "2026-07-27T16:41:16.094019Z",
           "excerpt": "Aider 官方开源仓库。"
         }
       ],
@@ -459,7 +834,7 @@
           "source_name": "Microsoft Data Formulator",
           "url": "https://github.com/microsoft/data-formulator",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.176979Z",
+          "captured_at": "2026-07-27T16:41:16.107600Z",
           "excerpt": "微软官方 Data Formulator 开源仓库。"
         }
       ],
@@ -509,7 +884,7 @@
           "source_name": "Jupyter AI",
           "url": "https://github.com/jupyterlab/jupyter-ai",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.176224Z",
+          "captured_at": "2026-07-27T16:41:16.103902Z",
           "excerpt": "JupyterLab 官方组织维护的 AI 扩展。"
         }
       ],
@@ -560,7 +935,7 @@
           "source_name": "OpenCode",
           "url": "https://github.com/anomalyco/opencode",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.174591Z",
+          "captured_at": "2026-07-27T16:41:16.097304Z",
           "excerpt": "OpenCode 官方开源仓库。"
         }
       ],
@@ -610,7 +985,7 @@
           "source_name": "Perplexica",
           "url": "https://github.com/ItzCrazyKns/Perplexica",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T16:27:21.176588Z",
+          "captured_at": "2026-07-27T16:41:16.105680Z",
           "excerpt": "Perplexica 官方开源仓库。"
         }
       ],
