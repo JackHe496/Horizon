@@ -28,6 +28,13 @@ def test_offline_pipeline_generates_catalog_daily_weekly_and_meta(tmp_path: Path
     assert catalog["stats"]["tool_count"] >= 20
     assert all(tool["status"] in {"verified", "tried"} for tool in weekly["tools"])
     assert all(tool["install"]["requires_confirmation"] for tool in catalog["tools"])
+    context7 = next(tool for tool in catalog["tools"] if tool["name"] == "Context7")
+    assert context7["community_signals"]["linux_do_mentions"] == 1
+    assert any(
+        evidence["source_id"] == "linux-do"
+        and evidence["url"] == "https://linux.do/t/topic/702108"
+        for evidence in context7["evidence"]
+    )
 
 
 def test_daily_mode_does_not_overwrite_existing_weekly_file(tmp_path: Path):

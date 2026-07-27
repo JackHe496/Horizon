@@ -206,10 +206,13 @@
       "install": {"method": "npm", "command": "npx -y @upstash/context7-mcp@latest", "note_zh": "命令仅供复制；接入 MCP 前需明确确认。"},
       "compatibility": ["Codex", "Claude Code", "Cursor", "MCP-compatible clients"],
       "tags": ["Documentation", "MCP", "Coding"],
-      "community_signals": {"official_repo": 1},
-      "evidence": [{"source_id": "curated", "source_name": "Context7", "url": "https://github.com/upstash/context7", "evidence_type": "official-repository", "excerpt": "Context7 官方开源仓库与接入说明。"}],
+      "community_signals": {"official_repo": 1, "linux_do_mentions": 1},
+      "evidence": [
+        {"source_id": "curated", "source_name": "Context7", "url": "https://github.com/upstash/context7", "evidence_type": "official-repository", "excerpt": "Context7 官方开源仓库与接入说明。"},
+        {"source_id": "linux-do", "source_name": "LINUX.DO", "url": "https://linux.do/t/topic/702108", "evidence_type": "community-discussion", "excerpt": "中文社区的 Context7 使用演示与讨论；社区信号不等于安全背书。"}
+      ],
       "discovered_at": "2025-01-01T00:00:00Z",
-      "updated_at": "2026-07-27T00:00:00Z",
+      "updated_at": "2026-07-28T00:00:00Z",
       "curated": true
     },
     {

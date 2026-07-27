@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T15:42:14.860365+00:00",
+  "generated_at": "2026-07-27T16:27:21.178026+00:00",
   "period": "weekly",
   "tools": [
     {
@@ -46,7 +46,7 @@
           "source_name": "DuckDB",
           "url": "https://github.com/duckdb/duckdb",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.858219Z",
+          "captured_at": "2026-07-27T16:27:21.176819Z",
           "excerpt": "DuckDB 官方开源仓库。"
         }
       ],
@@ -96,7 +96,7 @@
           "source_name": "MCP Inspector",
           "url": "https://github.com/modelcontextprotocol/inspector",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.851109Z",
+          "captured_at": "2026-07-27T16:27:21.173016Z",
           "excerpt": "Model Context Protocol 官方检查器仓库。"
         }
       ],
@@ -145,7 +145,7 @@
           "source_name": "Model Context Protocol",
           "url": "https://registry.modelcontextprotocol.io/docs",
           "evidence_type": "official-registry",
-          "captured_at": "2026-07-27T15:42:14.850678Z",
+          "captured_at": "2026-07-27T16:27:21.172799Z",
           "excerpt": "官方 MCP Registry 参考文档。"
         }
       ],
@@ -195,7 +195,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.849856Z",
+          "captured_at": "2026-07-27T16:27:21.172465Z",
           "excerpt": "每个插件包含 .codex-plugin/plugin.json 清单。"
         }
       ],
@@ -244,7 +244,7 @@
           "source_name": "PydanticAI",
           "url": "https://github.com/pydantic/pydantic-ai",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.855765Z",
+          "captured_at": "2026-07-27T16:27:21.175490Z",
           "excerpt": "Pydantic 官方 Agent 框架仓库。"
         }
       ],
@@ -296,7 +296,7 @@
           "source_name": "Astral uv",
           "url": "https://github.com/astral-sh/uv",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.859390Z",
+          "captured_at": "2026-07-27T16:27:21.177382Z",
           "excerpt": "Astral 官方 uv 开源仓库。"
         }
       ],
@@ -304,6 +304,67 @@
       "updated_at": "2026-07-27T00:00:00Z",
       "source_count": 1,
       "score": 105.75
+    },
+    {
+      "id": "context7-f34188cc",
+      "name": "Context7",
+      "name_zh": "Context7 文档 MCP",
+      "summary_zh": "为编码 Agent 提供按版本检索的库文档与代码示例。",
+      "use_case_zh": "降低模型使用过时 API 或凭记忆生成代码的概率。",
+      "homepage": "https://github.com/upstash/context7",
+      "repository": "https://github.com/upstash/context7",
+      "category": "search-research",
+      "kind": "mcp",
+      "pricing": "freemium",
+      "status": "verified",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "会把查询与依赖信息发送给外部服务；不要在查询中附带私有代码。",
+      "install": {
+        "method": "npm",
+        "command": "npx -y @upstash/context7-mcp@latest",
+        "note_zh": "命令仅供复制；接入 MCP 前需明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "Cursor",
+        "MCP-compatible clients"
+      ],
+      "tags": [
+        "Documentation",
+        "MCP",
+        "Coding"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1,
+        "linux_do_mentions": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Context7",
+          "url": "https://github.com/upstash/context7",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T16:27:21.173610Z",
+          "excerpt": "Context7 官方开源仓库与接入说明。"
+        },
+        {
+          "source_id": "linux-do",
+          "source_name": "LINUX.DO",
+          "url": "https://linux.do/t/topic/702108",
+          "evidence_type": "community-discussion",
+          "captured_at": "2026-07-27T16:27:21.173648Z",
+          "excerpt": "中文社区的 Context7 使用演示与讨论；社区信号不等于安全背书。"
+        }
+      ],
+      "discovered_at": "2025-01-01T00:00:00Z",
+      "updated_at": "2026-07-28T00:00:00Z",
+      "source_count": 2,
+      "score": 103.51
     },
     {
       "id": "aider-4cbde71d",
@@ -348,7 +409,7 @@
           "source_name": "Aider",
           "url": "https://github.com/Aider-AI/aider",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.852964Z",
+          "captured_at": "2026-07-27T16:27:21.174057Z",
           "excerpt": "Aider 官方开源仓库。"
         }
       ],
@@ -398,7 +459,7 @@
           "source_name": "Microsoft Data Formulator",
           "url": "https://github.com/microsoft/data-formulator",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.858615Z",
+          "captured_at": "2026-07-27T16:27:21.176979Z",
           "excerpt": "微软官方 Data Formulator 开源仓库。"
         }
       ],
@@ -448,7 +509,7 @@
           "source_name": "Jupyter AI",
           "url": "https://github.com/jupyterlab/jupyter-ai",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.857159Z",
+          "captured_at": "2026-07-27T16:27:21.176224Z",
           "excerpt": "JupyterLab 官方组织维护的 AI 扩展。"
         }
       ],
@@ -499,7 +560,7 @@
           "source_name": "OpenCode",
           "url": "https://github.com/anomalyco/opencode",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.854047Z",
+          "captured_at": "2026-07-27T16:27:21.174591Z",
           "excerpt": "OpenCode 官方开源仓库。"
         }
       ],
@@ -549,7 +610,7 @@
           "source_name": "Perplexica",
           "url": "https://github.com/ItzCrazyKns/Perplexica",
           "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.857859Z",
+          "captured_at": "2026-07-27T16:27:21.176588Z",
           "excerpt": "Perplexica 官方开源仓库。"
         }
       ],
@@ -557,58 +618,6 @@
       "updated_at": "2026-07-27T00:00:00Z",
       "source_count": 1,
       "score": 102.75
-    },
-    {
-      "id": "zotero-7d4a7518",
-      "name": "Zotero",
-      "name_zh": "Zotero 文献管理",
-      "summary_zh": "开源文献收集、管理、批注和引用工具，适合研究与学习资料长期整理。",
-      "use_case_zh": "建立可检索的论文库，并与写作和知识管理流程衔接。",
-      "homepage": "https://github.com/zotero/zotero",
-      "repository": "https://github.com/zotero/zotero",
-      "category": "productivity-learning",
-      "kind": "app",
-      "pricing": "freemium",
-      "status": "verified",
-      "maturity": "mature",
-      "maintenance": "active",
-      "permission_risk": "low",
-      "risk_note_zh": "同步会上传文献元数据和附件；敏感材料可仅本地保存。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "从 Zotero 官方网站下载安装包。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "macOS",
-        "Linux",
-        "Windows",
-        "Web"
-      ],
-      "tags": [
-        "Research",
-        "References",
-        "Learning"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "official_repo": 1
-      },
-      "evidence": [
-        {
-          "source_id": "curated",
-          "source_name": "Zotero",
-          "url": "https://github.com/zotero/zotero",
-          "evidence_type": "official-repository",
-          "captured_at": "2026-07-27T15:42:14.856416Z",
-          "excerpt": "Zotero 官方开源仓库。"
-        }
-      ],
-      "discovered_at": "2006-10-01T00:00:00Z",
-      "updated_at": "2026-07-27T00:00:00Z",
-      "source_count": 1,
-      "score": 100.75
     }
   ]
 }
