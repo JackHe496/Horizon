@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "curated_path": "data/tools/curated.json",
+  "ai_config_path": "data/config.github.json",
+  "ai": {
+    "concurrency": 4,
+    "max_candidates": 16
+  },
+  "sources": {
+    "github": {
+      "enabled": true,
+      "per_query": 6,
+      "min_stars": 100,
+      "active_days": 240
+    },
+    "openai_plugins": {
+      "enabled": true,
+      "limit": 36
+    },
+    "mcp_registry": {
+      "enabled": true,
+      "limit": 30
+    },
+    "product_hunt": {
+      "enabled": true,
+      "limit": 20
+    },
+    "huggingface_spaces": {
+      "enabled": true,
+      "per_query": 8
+    },
+    "skills_sh": {
+      "enabled": true,
+      "limit": 24
+    },
+    "linux_do": {
+      "enabled": true,
+      "limit": 16
+    }
+  }
+}

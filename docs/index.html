@@ -1,0 +1,81 @@
+---
+layout: default
+title: AI 工具雷达
+description: Jack 的中文个人 AI 工具发现、验证与收藏入口
+radar: true
+permalink: /
+---
+
+<div class="radar-app" data-radar-mode="home" data-data-base="{{ '/assets/data' | relative_url }}">
+  <section class="radar-hero">
+    <div class="radar-hero__copy">
+      <p class="eyebrow"><span></span> PERSONAL AI TOOL RADAR · CHINESE FIRST</p>
+      <h1>少追热点，<br><em>多用好工具。</em></h1>
+      <p class="hero-lede">每天从 GitHub、OpenAI Plugins、MCP Registry、Product Hunt、Hugging Face Spaces、Skills.sh 与 LINUX.DO 中筛出值得关注的 AI 工具，并保留原始证据。</p>
+      <div class="hero-actions">
+        <a class="button button--primary" href="{{ '/tool-stream/' | relative_url }}">查看今日工具流 <span aria-hidden="true">↗</span></a>
+        <a class="button button--ghost" href="{{ '/tools/' | relative_url }}">搜索全部目录</a>
+      </div>
+    </div>
+    <div class="radar-console" aria-label="雷达工作原则">
+      <div class="radar-console__top"><span></span><span></span><span></span><small>RADAR/STATUS</small></div>
+      <div class="radar-console__grid" aria-hidden="true">
+        <i></i><i></i><i></i><i></i>
+      </div>
+      <div class="radar-console__readout">
+        <p><span class="console-key">SCOPE</span><strong>AI CODING + AGENTS</strong></p>
+        <p><span class="console-key">POLICY</span><strong>FREE FIRST</strong></p>
+        <p><span class="console-key">INSTALL</span><strong>CONFIRM REQUIRED</strong></p>
+        <p><span class="console-key">TELEMETRY</span><strong>OFF</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="radar-stats" aria-label="工具雷达统计">
+    <article><span id="stat-tools">—</span><p>已收录工具</p></article>
+    <article><span id="stat-verified">—</span><p>已验证 / 已试用</p></article>
+    <article><span id="stat-free">—</span><p>免费优先</p></article>
+    <article><span id="stat-sources">—</span><p>可追溯来源</p></article>
+  </section>
+
+  <section class="radar-section">
+    <div class="section-heading">
+      <div><p class="section-index">01 / DAILY SIGNAL</p><h2>今日工具流</h2></div>
+      <a href="{{ '/tool-stream/' | relative_url }}">浏览全部 <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="section-intro">新品与更新先进入观察队列。自动来源不会直接获得“已验证”状态。</p>
+    <div class="tool-grid tool-grid--preview" data-radar-list="daily" aria-live="polite"></div>
+  </section>
+
+  <section class="radar-section radar-section--ink">
+    <div class="section-heading">
+      <div><p class="section-index">02 / WEEKLY PICKS</p><h2>本周精选</h2></div>
+      <a href="{{ '/weekly/' | relative_url }}">查看周选依据 <span aria-hidden="true">→</span></a>
+    </div>
+    <p class="section-intro">优先展示 verified / tried，并兼顾不同类别、免费可用性和维护状态。</p>
+    <div class="tool-grid tool-grid--preview" data-radar-list="weekly" aria-live="polite"></div>
+  </section>
+
+  <section class="radar-section">
+    <div class="section-heading">
+      <div><p class="section-index">03 / COVERAGE</p><h2>五个优先方向</h2></div>
+    </div>
+    <div class="category-board">
+      <a href="{{ '/tools/?category=ai-coding' | relative_url }}"><span>01</span><strong>AI 编程</strong><small>CLI · IDE · Code Agent</small></a>
+      <a href="{{ '/tools/?category=codex-ecosystem' | relative_url }}"><span>02</span><strong>Skills / Plugins / MCP</strong><small>Codex ecosystem</small></a>
+      <a href="{{ '/tools/?category=productivity-learning' | relative_url }}"><span>03</span><strong>效率与学习</strong><small>Notes · Knowledge · Research</small></a>
+      <a href="{{ '/tools/?category=agents-automation' | relative_url }}"><span>04</span><strong>Agents 与自动化</strong><small>Workflow · Orchestration</small></a>
+      <a href="{{ '/tools/?category=search-research' | relative_url }}"><span>05</span><strong>搜索研究与数据</strong><small>Search · Analysis · Evidence</small></a>
+    </div>
+  </section>
+
+  <section class="trust-strip">
+    <div><span>STATUS</span><strong>new → watch → verified → tried</strong></div>
+    <div><span>EVIDENCE</span><strong>跨来源合并，原链接不丢失</strong></div>
+    <div><span>SAFETY</span><strong>HTTPS · 纯文本 · 密钥模式剔除</strong></div>
+  </section>
+
+  <p class="data-updated" data-radar-updated>正在读取雷达数据…</p>
+</div>
+
+<noscript><p class="notice">工具雷达的搜索、筛选和本地收藏需要启用 JavaScript；原 AI 与物理日报仍可直接阅读。</p></noscript>

@@ -6,6 +6,10 @@ on:
     - cron: '0 23 * * *'
   workflow_dispatch:      # Allow manual trigger
 
+concurrency:
+  group: horizon-pages
+  cancel-in-progress: false
+
 jobs:
   daily-summary:
     runs-on: ubuntu-latest

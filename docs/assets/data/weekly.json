@@ -1,0 +1,614 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-07-27T15:42:14.860365+00:00",
+  "period": "weekly",
+  "tools": [
+    {
+      "id": "duckdb-7ebe3171",
+      "name": "DuckDB",
+      "name_zh": "DuckDB 本地分析数据库",
+      "summary_zh": "嵌入式列式分析数据库，可直接查询本地 Parquet、CSV 与多种数据源。",
+      "use_case_zh": "在笔记本或脚本中快速分析中小规模数据，无需部署数据库服务。",
+      "homepage": "https://github.com/duckdb/duckdb",
+      "repository": "https://github.com/duckdb/duckdb",
+      "category": "data-analysis",
+      "kind": "library",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "mature",
+      "maintenance": "active",
+      "permission_risk": "low",
+      "risk_note_zh": "本地文件查询风险较低；加载远程扩展和外部数据源时需检查权限。",
+      "install": {
+        "method": "uv",
+        "command": "uv add duckdb",
+        "note_zh": "仅供复制；添加依赖前需明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Python",
+        "R",
+        "CLI",
+        "Node.js"
+      ],
+      "tags": [
+        "SQL",
+        "Analytics",
+        "Local-first"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "DuckDB",
+          "url": "https://github.com/duckdb/duckdb",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.858219Z",
+          "excerpt": "DuckDB 官方开源仓库。"
+        }
+      ],
+      "discovered_at": "2019-06-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 108.75
+    },
+    {
+      "id": "mcp-inspector-2984950f",
+      "name": "MCP Inspector",
+      "name_zh": "MCP 检查器",
+      "summary_zh": "用于调试和检查 MCP 服务器能力、资源、提示词与工具调用的官方开发工具。",
+      "use_case_zh": "在接入客户端前本地核对 MCP 暴露了什么能力。",
+      "homepage": "https://github.com/modelcontextprotocol/inspector",
+      "repository": "https://github.com/modelcontextprotocol/inspector",
+      "category": "codex-ecosystem",
+      "kind": "mcp",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "调试时会连接目标 MCP；不要向不可信服务提供生产密钥。",
+      "install": {
+        "method": "npm",
+        "command": "npx @modelcontextprotocol/inspector",
+        "note_zh": "官方启动命令，仅供复制；执行前必须明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Node.js",
+        "MCP servers"
+      ],
+      "tags": [
+        "MCP",
+        "Debugging",
+        "Inspector"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "MCP Inspector",
+          "url": "https://github.com/modelcontextprotocol/inspector",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.851109Z",
+          "excerpt": "Model Context Protocol 官方检查器仓库。"
+        }
+      ],
+      "discovered_at": "2024-11-25T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 105.75
+    },
+    {
+      "id": "official-mcp-registry-2f02745f",
+      "name": "Official MCP Registry",
+      "name_zh": "官方 MCP Registry",
+      "summary_zh": "Model Context Protocol 官方社区注册服务，提供服务器元数据与版本信息。",
+      "use_case_zh": "发现 MCP 服务并回溯包、仓库、远程端点和发布状态。",
+      "homepage": "https://registry.modelcontextprotocol.io/docs",
+      "repository": "",
+      "category": "codex-ecosystem",
+      "kind": "platform",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "Registry 验证发布身份与元数据，但不等于对服务器行为做安全背书。",
+      "install": {
+        "method": "registry",
+        "command": "",
+        "note_zh": "仅用于发现；实际 MCP 安装或连接需单独确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "MCP-compatible clients"
+      ],
+      "tags": [
+        "MCP",
+        "Registry",
+        "Metadata"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_registry": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Model Context Protocol",
+          "url": "https://registry.modelcontextprotocol.io/docs",
+          "evidence_type": "official-registry",
+          "captured_at": "2026-07-27T15:42:14.850678Z",
+          "excerpt": "官方 MCP Registry 参考文档。"
+        }
+      ],
+      "discovered_at": "2025-09-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 105.75
+    },
+    {
+      "id": "openai-plugins-879267df",
+      "name": "OpenAI Plugins",
+      "name_zh": "OpenAI 插件目录",
+      "summary_zh": "OpenAI 维护的 Codex/ChatGPT 插件清单与插件包仓库。",
+      "use_case_zh": "集中发现带 Skills、Apps、MCP 和工作流说明的官方插件。",
+      "homepage": "https://github.com/openai/plugins",
+      "repository": "https://github.com/openai/plugins",
+      "category": "codex-ecosystem",
+      "kind": "platform",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "目录本身公开；各插件可能绑定外部连接器，权限需逐个检查。",
+      "install": {
+        "method": "directory",
+        "command": "",
+        "note_zh": "从 Codex 插件目录选择；本雷达不会自动安装。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "ChatGPT"
+      ],
+      "tags": [
+        "Codex Plugin",
+        "OpenAI",
+        "Marketplace"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_curated": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "OpenAI Plugins",
+          "url": "https://github.com/openai/plugins",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.849856Z",
+          "excerpt": "每个插件包含 .codex-plugin/plugin.json 清单。"
+        }
+      ],
+      "discovered_at": "2026-03-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 105.75
+    },
+    {
+      "id": "pydanticai-16da7244",
+      "name": "PydanticAI",
+      "name_zh": "PydanticAI Agent 框架",
+      "summary_zh": "以类型安全、结构化输出和可测试性为核心的 Python Agent 框架。",
+      "use_case_zh": "适合需要清晰数据模型、依赖注入和自动化测试的 Agent 服务。",
+      "homepage": "https://github.com/pydantic/pydantic-ai",
+      "repository": "https://github.com/pydantic/pydantic-ai",
+      "category": "agents-automation",
+      "kind": "library",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "框架风险取决于所接模型、工具和外部服务；需为每个工具设边界。",
+      "install": {
+        "method": "uv",
+        "command": "uv add pydantic-ai",
+        "note_zh": "仅供复制；添加依赖前需明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Python"
+      ],
+      "tags": [
+        "Agents",
+        "Python",
+        "Typed"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "PydanticAI",
+          "url": "https://github.com/pydantic/pydantic-ai",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.855765Z",
+          "excerpt": "Pydantic 官方 Agent 框架仓库。"
+        }
+      ],
+      "discovered_at": "2024-11-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 105.75
+    },
+    {
+      "id": "uv-0b126273",
+      "name": "uv",
+      "name_zh": "uv Python 工具链",
+      "summary_zh": "高速 Python 包与项目管理工具，可替代多种安装、虚拟环境和锁文件流程。",
+      "use_case_zh": "为 AI 与数据项目提供快速、可复现的依赖安装和命令运行环境。",
+      "homepage": "https://github.com/astral-sh/uv",
+      "repository": "https://github.com/astral-sh/uv",
+      "category": "productivity-learning",
+      "kind": "cli",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "包管理器会下载并执行第三方构建流程；需锁定依赖并核查来源。",
+      "install": {
+        "method": "shell",
+        "command": "curl -LsSf https://astral.sh/uv/install.sh | sh",
+        "note_zh": "官方安装命令，仅供展示；管道脚本执行前必须明确确认并先审阅。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "macOS",
+        "Linux",
+        "Windows",
+        "Python"
+      ],
+      "tags": [
+        "Python",
+        "Package manager",
+        "Developer productivity"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Astral uv",
+          "url": "https://github.com/astral-sh/uv",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.859390Z",
+          "excerpt": "Astral 官方 uv 开源仓库。"
+        }
+      ],
+      "discovered_at": "2024-02-15T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 105.75
+    },
+    {
+      "id": "aider-4cbde71d",
+      "name": "Aider",
+      "name_zh": "Aider 结对编程",
+      "summary_zh": "在终端中基于 Git 工作的开源 AI 结对编程工具。",
+      "use_case_zh": "适合小步提交、代码问答和可见 diff 驱动的修改。",
+      "homepage": "https://github.com/Aider-AI/aider",
+      "repository": "https://github.com/Aider-AI/aider",
+      "category": "ai-coding",
+      "kind": "cli",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "mature",
+      "maintenance": "active",
+      "permission_risk": "high",
+      "risk_note_zh": "会读取代码并调用模型 API；需检查模型提供方的数据策略和费用。",
+      "install": {
+        "method": "uv",
+        "command": "uv tool install aider-chat",
+        "note_zh": "仅供复制；安装和 API 配置需明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "macOS",
+        "Linux",
+        "Windows",
+        "Git"
+      ],
+      "tags": [
+        "AI coding",
+        "CLI",
+        "Git"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Aider",
+          "url": "https://github.com/Aider-AI/aider",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.852964Z",
+          "excerpt": "Aider 官方开源仓库。"
+        }
+      ],
+      "discovered_at": "2023-05-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 102.75
+    },
+    {
+      "id": "data-formulator-9cdfb52d",
+      "name": "Data Formulator",
+      "name_zh": "Data Formulator 可视化",
+      "summary_zh": "微软研究院开源的 AI 辅助数据转换和可视化探索工具。",
+      "use_case_zh": "用自然语言和可视化界面探索表格数据、生成转换与图表。",
+      "homepage": "https://github.com/microsoft/data-formulator",
+      "repository": "https://github.com/microsoft/data-formulator",
+      "category": "data-analysis",
+      "kind": "app",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "high",
+      "risk_note_zh": "数据可能发送给所配置模型；使用真实数据前应脱敏并确认提供方策略。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "按官方仓库文档运行；本雷达不自动安装。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Web",
+        "Python"
+      ],
+      "tags": [
+        "Visualization",
+        "Data analysis",
+        "Microsoft Research"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Microsoft Data Formulator",
+          "url": "https://github.com/microsoft/data-formulator",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.858615Z",
+          "excerpt": "微软官方 Data Formulator 开源仓库。"
+        }
+      ],
+      "discovered_at": "2023-01-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 102.75
+    },
+    {
+      "id": "jupyter-ai-6771fc06",
+      "name": "Jupyter AI",
+      "name_zh": "Jupyter AI",
+      "summary_zh": "把生成式 AI 聊天、魔法命令和多模型能力带入 JupyterLab 的开源扩展。",
+      "use_case_zh": "在数据分析和科研笔记中解释代码、生成草稿并对接不同模型。",
+      "homepage": "https://github.com/jupyterlab/jupyter-ai",
+      "repository": "https://github.com/jupyterlab/jupyter-ai",
+      "category": "data-analysis",
+      "kind": "plugin",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "high",
+      "risk_note_zh": "Notebook 内容可能发送给模型提供方；不要直接提交未脱敏数据。",
+      "install": {
+        "method": "uv",
+        "command": "uv add jupyter-ai",
+        "note_zh": "仅供复制；添加扩展和模型密钥前需明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "JupyterLab",
+        "Python"
+      ],
+      "tags": [
+        "Jupyter",
+        "Data analysis",
+        "LLM"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Jupyter AI",
+          "url": "https://github.com/jupyterlab/jupyter-ai",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.857159Z",
+          "excerpt": "JupyterLab 官方组织维护的 AI 扩展。"
+        }
+      ],
+      "discovered_at": "2023-05-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 102.75
+    },
+    {
+      "id": "opencode-9e40e5d9",
+      "name": "OpenCode",
+      "name_zh": "OpenCode 编码 Agent",
+      "summary_zh": "开源终端编码 Agent，强调多模型与可组合客户端体验。",
+      "use_case_zh": "适合希望自选模型并保留终端工作流的开发者。",
+      "homepage": "https://github.com/anomalyco/opencode",
+      "repository": "https://github.com/anomalyco/opencode",
+      "category": "ai-coding",
+      "kind": "cli",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "high",
+      "risk_note_zh": "可读取与修改代码、运行命令；模型凭据和执行权限需最小化。",
+      "install": {
+        "method": "npm",
+        "command": "npm install -g opencode-ai",
+        "note_zh": "仅供复制；执行前需对照官方文档并明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "macOS",
+        "Linux",
+        "Windows"
+      ],
+      "tags": [
+        "AI coding",
+        "CLI",
+        "Multi-model"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "OpenCode",
+          "url": "https://github.com/anomalyco/opencode",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.854047Z",
+          "excerpt": "OpenCode 官方开源仓库。"
+        }
+      ],
+      "discovered_at": "2024-01-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 102.75
+    },
+    {
+      "id": "perplexica-3144fa76",
+      "name": "Perplexica",
+      "name_zh": "Perplexica 开源搜索",
+      "summary_zh": "强调来源引用和可自托管的开源 AI 搜索引擎。",
+      "use_case_zh": "构建私有研究入口，聚合网络搜索并保留可追溯引用。",
+      "homepage": "https://github.com/ItzCrazyKns/Perplexica",
+      "repository": "https://github.com/ItzCrazyKns/Perplexica",
+      "category": "search-research",
+      "kind": "app",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "high",
+      "risk_note_zh": "搜索查询会发送到所配置模型和搜索服务；自托管也需保护 API 密钥。",
+      "install": {
+        "method": "docker",
+        "command": "",
+        "note_zh": "按官方 Docker 文档部署；本雷达不执行安装。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Docker",
+        "Web"
+      ],
+      "tags": [
+        "Search",
+        "Research",
+        "Self-hosted"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Perplexica",
+          "url": "https://github.com/ItzCrazyKns/Perplexica",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.857859Z",
+          "excerpt": "Perplexica 官方开源仓库。"
+        }
+      ],
+      "discovered_at": "2024-04-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 102.75
+    },
+    {
+      "id": "zotero-7d4a7518",
+      "name": "Zotero",
+      "name_zh": "Zotero 文献管理",
+      "summary_zh": "开源文献收集、管理、批注和引用工具，适合研究与学习资料长期整理。",
+      "use_case_zh": "建立可检索的论文库，并与写作和知识管理流程衔接。",
+      "homepage": "https://github.com/zotero/zotero",
+      "repository": "https://github.com/zotero/zotero",
+      "category": "productivity-learning",
+      "kind": "app",
+      "pricing": "freemium",
+      "status": "verified",
+      "maturity": "mature",
+      "maintenance": "active",
+      "permission_risk": "low",
+      "risk_note_zh": "同步会上传文献元数据和附件；敏感材料可仅本地保存。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "从 Zotero 官方网站下载安装包。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "macOS",
+        "Linux",
+        "Windows",
+        "Web"
+      ],
+      "tags": [
+        "Research",
+        "References",
+        "Learning"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "official_repo": 1
+      },
+      "evidence": [
+        {
+          "source_id": "curated",
+          "source_name": "Zotero",
+          "url": "https://github.com/zotero/zotero",
+          "evidence_type": "official-repository",
+          "captured_at": "2026-07-27T15:42:14.856416Z",
+          "excerpt": "Zotero 官方开源仓库。"
+        }
+      ],
+      "discovered_at": "2006-10-01T00:00:00Z",
+      "updated_at": "2026-07-27T00:00:00Z",
+      "source_count": 1,
+      "score": 100.75
+    }
+  ]
+}

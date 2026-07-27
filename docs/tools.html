@@ -1,0 +1,75 @@
+---
+layout: default
+title: 工具目录
+description: 可搜索、分类、排序和收藏的 AI 工具目录
+radar: true
+permalink: /tools/
+---
+
+<div class="radar-app" data-radar-mode="directory" data-data-base="{{ '/assets/data' | relative_url }}">
+  <header class="page-intro">
+    <p class="eyebrow"><span></span> SEARCHABLE DIRECTORY</p>
+    <h1>工具目录</h1>
+    <p>中文说明优先，保留英文工具名、原始链接、安装方法和证据。默认按“已验证优先”排序。</p>
+  </header>
+
+  <section class="catalog-controls" aria-label="工具筛选">
+    <label class="search-field">
+      <span>搜索</span>
+      <input id="radar-search" type="search" placeholder="工具名、用途、标签…  /" autocomplete="off">
+    </label>
+    <label>
+      <span>分类</span>
+      <select id="radar-category">
+        <option value="">全部分类</option>
+        <option value="ai-coding">AI 编程</option>
+        <option value="codex-ecosystem">Skills / Plugins / MCP</option>
+        <option value="productivity-learning">效率与学习</option>
+        <option value="agents-automation">Agents / 自动化</option>
+        <option value="search-research">搜索与研究</option>
+        <option value="data-analysis">数据分析</option>
+      </select>
+    </label>
+    <label>
+      <span>状态</span>
+      <select id="radar-status">
+        <option value="">全部（推荐优先）</option>
+        <option value="recommended">verified / tried</option>
+        <option value="new">new</option>
+        <option value="watch">watch</option>
+        <option value="verified">verified</option>
+        <option value="tried">tried</option>
+        <option value="rejected">rejected</option>
+      </select>
+    </label>
+    <label>
+      <span>价格</span>
+      <select id="radar-pricing">
+        <option value="">全部价格</option>
+        <option value="free">免费</option>
+        <option value="freemium">免费增值</option>
+        <option value="paid">付费</option>
+        <option value="unknown">待核实</option>
+      </select>
+    </label>
+    <label>
+      <span>排序</span>
+      <select id="radar-sort">
+        <option value="recommended">已验证优先</option>
+        <option value="newest">最近更新</option>
+        <option value="community">社区信号</option>
+        <option value="free">免费优先</option>
+        <option value="name">名称</option>
+      </select>
+    </label>
+  </section>
+
+  <div class="catalog-summary">
+    <p id="radar-count" aria-live="polite">正在读取目录…</p>
+    <button class="text-button" id="radar-clear" type="button">清除筛选</button>
+  </div>
+  <div class="tool-grid" data-radar-list="directory" aria-live="polite"></div>
+  <p class="data-updated" data-radar-updated></p>
+</div>
+
+<noscript><p class="notice">搜索和筛选需要启用 JavaScript。</p></noscript>
