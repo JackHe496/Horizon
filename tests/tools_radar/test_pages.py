@@ -18,6 +18,13 @@ def test_radar_pages_are_static_and_have_expected_routes():
         assert "<form" not in text
 
 
+def test_legacy_markdown_homepage_is_an_inert_deployment_tombstone():
+    tombstone = (DOCS / "index.md").read_text()
+
+    assert "Compatibility tombstone" in tombstone
+    assert not tombstone.lstrip().startswith("---")
+
+
 def test_browser_renderer_never_injects_source_html():
     renderer = (DOCS / "assets/js/tools-radar.js").read_text()
     assert ".innerHTML" not in renderer
