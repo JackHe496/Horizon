@@ -1,17 +1,17 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T16:48:58.869249+00:00",
-  "mode": "daily",
+  "generated_at": "2026-07-27T16:51:07.614371+00:00",
+  "mode": "weekly",
   "stats": {
     "tool_count": 115,
     "verified_count": 25,
     "free_first_count": 52,
     "source_count": 8,
     "categories": {
-      "agents-automation": 18,
+      "agents-automation": 21,
       "codex-ecosystem": 26,
       "data-analysis": 19,
-      "productivity-learning": 8,
+      "productivity-learning": 5,
       "search-research": 20,
       "ai-coding": 24
     },
