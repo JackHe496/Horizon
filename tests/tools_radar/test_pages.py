@@ -18,11 +18,12 @@ def test_radar_pages_are_static_and_have_expected_routes():
         assert "<form" not in text
 
 
-def test_legacy_markdown_homepage_is_an_inert_deployment_tombstone():
+def test_legacy_markdown_homepage_is_redirected_away_from_site_root():
     tombstone = (DOCS / "index.md").read_text()
 
     assert "Compatibility tombstone" in tombstone
-    assert not tombstone.lstrip().startswith("---")
+    assert tombstone.lstrip().startswith("---")
+    assert "permalink: /legacy-home-tombstone/" in tombstone
 
 
 def test_browser_renderer_never_injects_source_html():
