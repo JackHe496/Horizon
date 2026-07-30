@@ -1,25 +1,29 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-07-27T16:27:21.178026+00:00",
-  "mode": "all",
+  "generated_at": "2026-07-30T03:41:07.828830+00:00",
+  "mode": "daily",
   "stats": {
-    "tool_count": 26,
-    "verified_count": 26,
-    "free_first_count": 15,
-    "source_count": 2,
+    "tool_count": 115,
+    "verified_count": 25,
+    "free_first_count": 52,
+    "source_count": 8,
     "categories": {
-      "data-analysis": 3,
-      "codex-ecosystem": 7,
-      "agents-automation": 4,
-      "productivity-learning": 3,
-      "search-research": 4,
-      "ai-coding": 5
+      "codex-ecosystem": 26,
+      "data-analysis": 17,
+      "agents-automation": 23,
+      "productivity-learning": 2,
+      "search-research": 18,
+      "ai-coding": 28,
+      "other": 1
     },
     "statuses": {
-      "verified": 26
+      "verified": 25,
+      "watch": 70,
+      "new": 20
     },
     "source_health": {
-      "success": 1
+      "success": 7,
+      "failure": 1
     }
   },
   "sources": [
@@ -28,6 +32,48 @@
       "status": "success",
       "item_count": 26,
       "error": ""
+    },
+    {
+      "source_id": "github",
+      "status": "success",
+      "item_count": 30,
+      "error": ""
+    },
+    {
+      "source_id": "openai-plugins",
+      "status": "success",
+      "item_count": 36,
+      "error": ""
+    },
+    {
+      "source_id": "mcp-registry",
+      "status": "success",
+      "item_count": 30,
+      "error": ""
+    },
+    {
+      "source_id": "product-hunt",
+      "status": "success",
+      "item_count": 20,
+      "error": ""
+    },
+    {
+      "source_id": "huggingface-spaces",
+      "status": "success",
+      "item_count": 24,
+      "error": ""
+    },
+    {
+      "source_id": "skills-sh",
+      "status": "success",
+      "item_count": 24,
+      "error": ""
+    },
+    {
+      "source_id": "linux-do",
+      "status": "failure",
+      "item_count": 0,
+      "error": "Client error '403 Forbidden' for url 'https://linux.do/latest.rss?order=created' For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
     }
   ]
 }
