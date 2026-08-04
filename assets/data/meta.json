@@ -1,24 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-03T04:26:42.701773+00:00",
-  "mode": "weekly",
+  "generated_at": "2026-08-04T03:48:32.488992+00:00",
+  "mode": "daily",
   "stats": {
-    "tool_count": 113,
+    "tool_count": 116,
     "verified_count": 25,
-    "free_first_count": 50,
+    "free_first_count": 52,
     "source_count": 8,
     "categories": {
       "agents-automation": 18,
-      "codex-ecosystem": 26,
-      "data-analysis": 18,
-      "productivity-learning": 3,
+      "codex-ecosystem": 31,
+      "data-analysis": 16,
+      "productivity-learning": 2,
       "search-research": 18,
-      "ai-coding": 29,
-      "other": 1
+      "ai-coding": 31
     },
     "statuses": {
       "verified": 25,
-      "watch": 68,
+      "watch": 71,
       "new": 20
     },
     "source_health": {
