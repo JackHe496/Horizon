@@ -1,667 +1,8 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-04T03:48:32.488992+00:00",
+  "generated_at": "2026-08-05T03:43:30.425563+00:00",
   "period": "daily",
   "tools": [
-    {
-      "id": "lark-doc-9f597174",
-      "name": "lark doc",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：lark-doc。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/larksuite/cli/lark-doc",
-      "repository": "https://github.com/larksuite/cli",
-      "category": "codex-ecosystem",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add larksuite/cli",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "lark-doc"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 24
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/larksuite/cli/lark-doc",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.310339Z",
-          "excerpt": "公开排行榜第 24 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.310391Z",
-      "updated_at": "2026-08-04T03:47:15.310392Z",
-      "source_count": 1,
-      "score": 55.49
-    },
-    {
-      "id": "caveman-d6b8403b",
-      "name": "caveman",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：caveman。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/juliusbrussee/caveman/caveman",
-      "repository": "https://github.com/juliusbrussee/caveman",
-      "category": "codex-ecosystem",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add juliusbrussee/caveman",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "caveman"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 23
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/juliusbrussee/caveman/caveman",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.309370Z",
-          "excerpt": "公开排行榜第 23 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.309418Z",
-      "updated_at": "2026-08-04T03:47:15.309419Z",
-      "source_count": 1,
-      "score": 55.45
-    },
-    {
-      "id": "azure-hosted-copilot-sdk-ea56221c",
-      "name": "azure hosted copilot sdk",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：azure-hosted-copilot-sdk。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/microsoft/azure-skills/azure-hosted-copilot-sdk",
-      "repository": "https://github.com/microsoft/azure-skills",
-      "category": "codex-ecosystem",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add microsoft/azure-skills",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "microsoft-foundry",
-        "azure-ai",
-        "azure-messaging",
-        "azure-rbac",
-        "azure-compute",
-        "azure-hosted-copilot-sdk",
-        "azure-cloud-migrate"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 22
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/microsoft/azure-skills/microsoft-foundry",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.298289Z",
-          "excerpt": "公开排行榜第 12 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/microsoft/azure-skills/azure-ai",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.301289Z",
-          "excerpt": "公开排行榜第 15 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/microsoft/azure-skills/azure-messaging",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.302250Z",
-          "excerpt": "公开排行榜第 16 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/microsoft/azure-skills/azure-rbac",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.304287Z",
-          "excerpt": "公开排行榜第 18 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/microsoft/azure-skills/azure-compute",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.306368Z",
-          "excerpt": "公开排行榜第 20 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/microsoft/azure-skills/azure-hosted-copilot-sdk",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.307318Z",
-          "excerpt": "公开排行榜第 21 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/microsoft/azure-skills/azure-cloud-migrate",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.308404Z",
-          "excerpt": "公开排行榜第 22 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.298338Z",
-      "updated_at": "2026-08-04T03:47:15.308453Z",
-      "source_count": 1,
-      "score": 55.4
-    },
-    {
-      "id": "remotion-best-practices-e032656f",
-      "name": "remotion best practices",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：remotion-best-practices。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/remotion-dev/skills/remotion-best-practices",
-      "repository": "https://github.com/remotion-dev/skills",
-      "category": "codex-ecosystem",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add remotion-dev/skills",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "remotion-best-practices"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 19
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/remotion-dev/skills/remotion-best-practices",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.305389Z",
-          "excerpt": "公开排行榜第 19 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.305439Z",
-      "updated_at": "2026-08-04T03:47:15.305439Z",
-      "source_count": 1,
-      "score": 55.25
-    },
-    {
-      "id": "improve-codebase-architecture-2595c751",
-      "name": "improve codebase architecture",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：improve-codebase-architecture。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
-      "repository": "https://github.com/mattpocock/skills",
-      "category": "ai-coding",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add mattpocock/skills",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "grill-me",
-        "grill-with-docs",
-        "improve-codebase-architecture",
-        "tdd",
-        "setup-matt-pocock-skills",
-        "handoff",
-        "triage",
-        "prototype"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 17
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/grill-me",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.287938Z",
-          "excerpt": "公开排行榜第 2 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.290095Z",
-          "excerpt": "公开排行榜第 4 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.292221Z",
-          "excerpt": "公开排行榜第 6 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/tdd",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.294175Z",
-          "excerpt": "公开排行榜第 8 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.296218Z",
-          "excerpt": "公开排行榜第 10 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/handoff",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.299258Z",
-          "excerpt": "公开排行榜第 13 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/triage",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.300341Z",
-          "excerpt": "公开排行榜第 14 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/mattpocock/skills/prototype",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.303347Z",
-          "excerpt": "公开排行榜第 17 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.287996Z",
-      "updated_at": "2026-08-04T03:47:15.303396Z",
-      "source_count": 1,
-      "score": 55.14
-    },
-    {
-      "id": "vercel-react-best-practices-0c1a0b19",
-      "name": "vercel react best practices",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：vercel-react-best-practices。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
-      "repository": "https://github.com/vercel-labs/agent-skills",
-      "category": "ai-coding",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add vercel-labs/agent-skills",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "vercel-react-best-practices",
-        "web-design-guidelines"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 11
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.293200Z",
-          "excerpt": "公开排行榜第 7 个发现信号。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.297328Z",
-          "excerpt": "公开排行榜第 11 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.293249Z",
-      "updated_at": "2026-08-04T03:47:15.297378Z",
-      "source_count": 1,
-      "score": 54.7
-    },
-    {
-      "id": "ai-video-generation-841a0f40",
-      "name": "ai video generation",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：ai-video-generation。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/101-skills/skills/ai-video-generation",
-      "repository": "https://github.com/101-skills/skills",
-      "category": "codex-ecosystem",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add 101-skills/skills",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "ai-video-generation"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 9
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/101-skills/skills/ai-video-generation",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.295255Z",
-          "excerpt": "公开排行榜第 9 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.295302Z",
-      "updated_at": "2026-08-04T03:47:15.295303Z",
-      "source_count": 1,
-      "score": 54.5
-    },
-    {
-      "id": "agent-browser-634fb797",
-      "name": "agent browser",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：agent-browser。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
-      "repository": "https://github.com/vercel-labs/agent-browser",
-      "category": "agents-automation",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add vercel-labs/agent-browser",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "agent-browser"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 5
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.291071Z",
-          "excerpt": "公开排行榜第 5 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.291119Z",
-      "updated_at": "2026-08-04T03:47:15.291120Z",
-      "source_count": 1,
-      "score": 53.95
-    },
-    {
-      "id": "anthropic-agent-skills-edf04ead",
-      "name": "Anthropic Agent Skills",
-      "name_zh": "Anthropic Agent Skills",
-      "summary_zh": "Anthropic 公开的 Agent Skills 示例与文档处理技能集合。",
-      "use_case_zh": "学习 Skill 结构，或挑选经过官方维护的文档、表格与演示工作流。",
-      "homepage": "https://github.com/anthropics/skills",
-      "repository": "https://github.com/anthropics/skills",
-      "category": "codex-ecosystem",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "verified",
-      "maturity": "stable",
-      "maintenance": "active",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 可能调用脚本和工具；即使来源官方也要先审阅范围。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add anthropics/skills",
-        "note_zh": "仅供复制；具体 Skill 的安装必须先明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Agent Skills compatible clients",
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skills",
-        "Documents",
-        "Examples",
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "frontend-design"
-      ],
-      "community_signals": {
-        "official_repo": 1,
-        "skills_sh_rank": 3
-      },
-      "evidence": [
-        {
-          "source_id": "curated",
-          "source_name": "Anthropic Skills",
-          "url": "https://github.com/anthropics/skills",
-          "evidence_type": "official-repository",
-          "captured_at": "2026-08-04T03:47:13.758248Z",
-          "excerpt": "Anthropic 官方 Agent Skills 仓库。"
-        },
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/anthropics/skills/frontend-design",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.289100Z",
-          "excerpt": "公开排行榜第 3 个发现信号。"
-        }
-      ],
-      "discovered_at": "2025-10-16T00:00:00Z",
-      "updated_at": "2026-08-04T03:47:15.289151Z",
-      "source_count": 2,
-      "score": 109.26
-    },
-    {
-      "id": "find-skills-81796f0a",
-      "name": "find skills",
-      "name_zh": "",
-      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：find-skills。",
-      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
-      "homepage": "https://skills.sh/vercel-labs/skills/find-skills",
-      "repository": "https://github.com/vercel-labs/skills",
-      "category": "codex-ecosystem",
-      "kind": "skill",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "unknown",
-      "maintenance": "unknown",
-      "permission_risk": "high",
-      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
-      "install": {
-        "method": "npx-skills",
-        "command": "npx skills add vercel-labs/skills",
-        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Codex",
-        "Claude Code",
-        "兼容 Agent Skills 的客户端"
-      ],
-      "tags": [
-        "Agent Skill",
-        "Skills.sh"
-      ],
-      "aliases": [
-        "find-skills"
-      ],
-      "community_signals": {
-        "skills_sh_rank": 1
-      },
-      "evidence": [
-        {
-          "source_id": "skills-sh",
-          "source_name": "Skills.sh",
-          "url": "https://skills.sh/vercel-labs/skills/find-skills",
-          "evidence_type": "community-leaderboard",
-          "captured_at": "2026-08-04T03:47:15.286826Z",
-          "excerpt": "公开排行榜第 1 个发现信号。"
-        }
-      ],
-      "discovered_at": "2026-08-04T03:47:15.286887Z",
-      "updated_at": "2026-08-04T03:47:15.286889Z",
-      "source_count": 1,
-      "score": 52.75
-    },
     {
       "id": "openai-plugins-879267df",
       "name": "OpenAI Plugins",
@@ -754,7 +95,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins",
           "evidence_type": "official-repository",
-          "captured_at": "2026-08-04T03:47:13.751505Z",
+          "captured_at": "2026-08-05T03:42:58.025573Z",
           "excerpt": "每个插件包含 .codex-plugin/plugin.json 清单。"
         },
         {
@@ -762,7 +103,7 @@
           "source_name": "Zotero",
           "url": "https://github.com/zotero/zotero",
           "evidence_type": "official-repository",
-          "captured_at": "2026-08-04T03:47:13.767105Z",
+          "captured_at": "2026-08-05T03:42:58.041472Z",
           "excerpt": "Zotero 官方开源仓库。"
         },
         {
@@ -770,7 +111,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/build-web-apps",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.121927Z",
+          "captured_at": "2026-08-05T03:42:58.448356Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -778,7 +119,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/build-web-data-visualization",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.405456Z",
+          "captured_at": "2026-08-05T03:42:58.484529Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -786,7 +127,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/cloudflare",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.388041Z",
+          "captured_at": "2026-08-05T03:42:58.472418Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -794,7 +135,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/coderabbit",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.378544Z",
+          "captured_at": "2026-08-05T03:42:58.632534Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -802,7 +143,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/deepnote",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.404047Z",
+          "captured_at": "2026-08-05T03:42:58.635001Z",
           "excerpt": "OpenAI curated marketplace；分类 Data & Analytics。"
         },
         {
@@ -810,7 +151,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/github",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.132754Z",
+          "captured_at": "2026-08-05T03:42:58.638715Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -818,7 +159,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/google-drive",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.155285Z",
+          "captured_at": "2026-08-05T03:42:58.489046Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -826,7 +167,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/hugging-face",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.147148Z",
+          "captured_at": "2026-08-05T03:42:58.534283Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -834,7 +175,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/netlify",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.391930Z",
+          "captured_at": "2026-08-05T03:42:58.882102Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -842,7 +183,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/notion",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.402737Z",
+          "captured_at": "2026-08-05T03:42:58.886376Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -850,7 +191,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/plugin-eval",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.390222Z",
+          "captured_at": "2026-08-05T03:42:58.887548Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -858,7 +199,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/sentry",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.409464Z",
+          "captured_at": "2026-08-05T03:42:58.883368Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -866,7 +207,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/vercel",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.585723Z",
+          "captured_at": "2026-08-05T03:42:58.700453Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -874,7 +215,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/zotero",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.613415Z",
+          "captured_at": "2026-08-05T03:42:58.933808Z",
           "excerpt": "OpenAI curated marketplace；分类 Education & Research。"
         },
         {
@@ -882,7 +223,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/figma",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.537383Z",
+          "captured_at": "2026-08-05T03:42:59.166409Z",
           "excerpt": "OpenAI curated marketplace；分类 Creativity。"
         },
         {
@@ -890,7 +231,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/airtable",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.502310Z",
+          "captured_at": "2026-08-05T03:42:58.884992Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -898,7 +239,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/alation",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.629632Z",
+          "captured_at": "2026-08-05T03:42:59.197157Z",
           "excerpt": "OpenAI curated marketplace；分类 Data & Analytics。"
         },
         {
@@ -906,7 +247,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/amplitude",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.598238Z",
+          "captured_at": "2026-08-05T03:42:59.207818Z",
           "excerpt": "OpenAI curated marketplace；分类 Data & Analytics。"
         },
         {
@@ -914,7 +255,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/asana",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.593573Z",
+          "captured_at": "2026-08-05T03:42:59.172719Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -922,7 +263,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/atlassian-rovo",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.505601Z",
+          "captured_at": "2026-08-05T03:42:59.180506Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -930,7 +271,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/base44",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.689158Z",
+          "captured_at": "2026-08-05T03:42:59.171330Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -938,7 +279,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/boltz-api-cli",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.632414Z",
+          "captured_at": "2026-08-05T03:42:59.176366Z",
           "excerpt": "OpenAI curated marketplace；分类 Education & Research。"
         },
         {
@@ -946,7 +287,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/box",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.743761Z",
+          "captured_at": "2026-08-05T03:42:59.521366Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -954,7 +295,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/brand24",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.803105Z",
+          "captured_at": "2026-08-05T03:42:59.438987Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -962,7 +303,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/brighthire",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.683952Z",
+          "captured_at": "2026-08-05T03:42:59.345213Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -970,7 +311,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/build-ios-apps",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.691289Z",
+          "captured_at": "2026-08-05T03:42:59.434523Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -978,7 +319,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/build-macos-apps",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.723736Z",
+          "captured_at": "2026-08-05T03:42:59.332831Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -986,7 +327,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/calendly",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.752534Z",
+          "captured_at": "2026-08-05T03:42:59.380671Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -994,7 +335,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/catalyst-by-zoho",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.854628Z",
+          "captured_at": "2026-08-05T03:42:59.535345Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -1002,7 +343,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/channel99",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.804418Z",
+          "captured_at": "2026-08-05T03:42:59.533507Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -1010,7 +351,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/circleback",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.775796Z",
+          "captured_at": "2026-08-05T03:42:59.662949Z",
           "excerpt": "OpenAI curated marketplace；分类 Communication。"
         },
         {
@@ -1018,7 +359,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/circleci",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.807507Z",
+          "captured_at": "2026-08-05T03:42:59.684409Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -1026,7 +367,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/clickup",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.914091Z",
+          "captured_at": "2026-08-05T03:42:59.641244Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -1034,7 +375,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/cloudinary",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.874958Z",
+          "captured_at": "2026-08-05T03:42:59.773429Z",
           "excerpt": "OpenAI curated marketplace；分类 Developer Tools。"
         },
         {
@@ -1042,7 +383,7 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/common-room",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.962276Z",
+          "captured_at": "2026-08-05T03:42:59.752456Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         },
         {
@@ -1050,427 +391,639 @@
           "source_name": "OpenAI Plugins",
           "url": "https://github.com/openai/plugins/tree/main/plugins/conductor",
           "evidence_type": "official-marketplace",
-          "captured_at": "2026-08-04T03:47:14.886131Z",
+          "captured_at": "2026-08-05T03:42:59.804446Z",
           "excerpt": "OpenAI curated marketplace；分类 Productivity。"
         }
       ],
       "discovered_at": "2006-10-01T00:00:00Z",
-      "updated_at": "2026-08-04T03:47:14.962337Z",
+      "updated_at": "2026-08-05T03:42:59.804509Z",
       "source_count": 2,
       "score": 108.51
     },
     {
-      "id": "bitfun-e697ee93",
-      "name": "BitFun",
+      "id": "azure-hosted-copilot-sdk-ea56221c",
+      "name": "azure hosted copilot sdk",
       "name_zh": "",
-      "summary_zh": "BitFun 是一个桌面级 Agent 运行时，内置 Code Agent、Cowork Agent 与 Computer Use，具备记忆、个性和持续进化能力。",
-      "use_case_zh": "适合在桌面上运行需要代码操作、协作与电脑操控能力的智能体，用于搭建可演进的个人 AI 工作流。",
-      "homepage": "https://github.com/GCWing/BitFun",
-      "repository": "https://github.com/GCWing/BitFun",
-      "category": "agents-automation",
-      "kind": "library",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：azure-hosted-copilot-sdk。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/microsoft/azure-skills/azure-hosted-copilot-sdk",
+      "repository": "https://github.com/microsoft/azure-skills",
+      "category": "codex-ecosystem",
+      "kind": "skill",
       "pricing": "free",
       "status": "watch",
-      "maturity": "beta",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add microsoft/azure-skills",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "microsoft-foundry",
+        "azure-messaging",
+        "azure-rbac",
+        "azure-compute",
+        "azure-cloud-migrate",
+        "azure-hosted-copilot-sdk",
+        "azure-quotas"
+      ],
+      "community_signals": {
+        "skills_sh_rank": 24
+      },
+      "evidence": [
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/microsoft/azure-skills/microsoft-foundry",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.152248Z",
+          "excerpt": "公开排行榜第 13 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/microsoft/azure-skills/azure-messaging",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.154309Z",
+          "excerpt": "公开排行榜第 15 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/microsoft/azure-skills/azure-rbac",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.155272Z",
+          "excerpt": "公开排行榜第 16 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/microsoft/azure-skills/azure-compute",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.157452Z",
+          "excerpt": "公开排行榜第 18 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/microsoft/azure-skills/azure-cloud-migrate",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.158417Z",
+          "excerpt": "公开排行榜第 19 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/microsoft/azure-skills/azure-hosted-copilot-sdk",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.159887Z",
+          "excerpt": "公开排行榜第 20 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/microsoft/azure-skills/azure-quotas",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.163874Z",
+          "excerpt": "公开排行榜第 24 个发现信号。"
+        }
+      ],
+      "discovered_at": "2026-08-05T03:42:59.152297Z",
+      "updated_at": "2026-08-05T03:42:59.163927Z",
+      "source_count": 1,
+      "score": 55.49
+    },
+    {
+      "id": "improve-codebase-architecture-2595c751",
+      "name": "improve codebase architecture",
+      "name_zh": "",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：improve-codebase-architecture。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
+      "repository": "https://github.com/mattpocock/skills",
+      "category": "ai-coding",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add mattpocock/skills",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "grill-me",
+        "grill-with-docs",
+        "improve-codebase-architecture",
+        "tdd",
+        "setup-matt-pocock-skills",
+        "handoff",
+        "triage",
+        "prototype",
+        "teach"
+      ],
+      "community_signals": {
+        "skills_sh_rank": 23
+      },
+      "evidence": [
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/grill-me",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.140663Z",
+          "excerpt": "公开排行榜第 2 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/grill-with-docs",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.142976Z",
+          "excerpt": "公开排行榜第 4 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/improve-codebase-architecture",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.145039Z",
+          "excerpt": "公开排行榜第 6 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/tdd",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.147144Z",
+          "excerpt": "公开排行榜第 8 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/setup-matt-pocock-skills",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.148213Z",
+          "excerpt": "公开排行榜第 9 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/handoff",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.150189Z",
+          "excerpt": "公开排行榜第 11 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/triage",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.151266Z",
+          "excerpt": "公开排行榜第 12 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/prototype",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.153221Z",
+          "excerpt": "公开排行榜第 14 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/mattpocock/skills/teach",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.162926Z",
+          "excerpt": "公开排行榜第 23 个发现信号。"
+        }
+      ],
+      "discovered_at": "2026-08-05T03:42:59.140716Z",
+      "updated_at": "2026-08-05T03:42:59.162976Z",
+      "source_count": 1,
+      "score": 55.45
+    },
+    {
+      "id": "lark-doc-9f597174",
+      "name": "lark doc",
+      "name_zh": "",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：lark-doc。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/larksuite/cli/lark-doc",
+      "repository": "https://github.com/larksuite/cli",
+      "category": "codex-ecosystem",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add larksuite/cli",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "lark-doc"
+      ],
+      "community_signals": {
+        "skills_sh_rank": 22
+      },
+      "evidence": [
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/larksuite/cli/lark-doc",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.161814Z",
+          "excerpt": "公开排行榜第 22 个发现信号。"
+        }
+      ],
+      "discovered_at": "2026-08-05T03:42:59.161883Z",
+      "updated_at": "2026-08-05T03:42:59.161884Z",
+      "source_count": 1,
+      "score": 55.4
+    },
+    {
+      "id": "caveman-d6b8403b",
+      "name": "caveman",
+      "name_zh": "",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：caveman。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/juliusbrussee/caveman/caveman",
+      "repository": "https://github.com/juliusbrussee/caveman",
+      "category": "codex-ecosystem",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add juliusbrussee/caveman",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "caveman"
+      ],
+      "community_signals": {
+        "skills_sh_rank": 21
+      },
+      "evidence": [
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/juliusbrussee/caveman/caveman",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.160879Z",
+          "excerpt": "公开排行榜第 21 个发现信号。"
+        }
+      ],
+      "discovered_at": "2026-08-05T03:42:59.160932Z",
+      "updated_at": "2026-08-05T03:42:59.160933Z",
+      "source_count": 1,
+      "score": 55.36
+    },
+    {
+      "id": "remotion-best-practices-e032656f",
+      "name": "remotion best practices",
+      "name_zh": "",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：remotion-best-practices。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/remotion-dev/skills/remotion-best-practices",
+      "repository": "https://github.com/remotion-dev/skills",
+      "category": "codex-ecosystem",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add remotion-dev/skills",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "remotion-best-practices"
+      ],
+      "community_signals": {
+        "skills_sh_rank": 17
+      },
+      "evidence": [
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/remotion-dev/skills/remotion-best-practices",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.156458Z",
+          "excerpt": "公开排行榜第 17 个发现信号。"
+        }
+      ],
+      "discovered_at": "2026-08-05T03:42:59.156510Z",
+      "updated_at": "2026-08-05T03:42:59.156511Z",
+      "source_count": 1,
+      "score": 55.14
+    },
+    {
+      "id": "vercel-react-best-practices-0c1a0b19",
+      "name": "vercel react best practices",
+      "name_zh": "",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：vercel-react-best-practices。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+      "repository": "https://github.com/vercel-labs/agent-skills",
+      "category": "ai-coding",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add vercel-labs/agent-skills",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "vercel-react-best-practices",
+        "web-design-guidelines"
+      ],
+      "community_signals": {
+        "skills_sh_rank": 10
+      },
+      "evidence": [
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/vercel-labs/agent-skills/vercel-react-best-practices",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.146160Z",
+          "excerpt": "公开排行榜第 7 个发现信号。"
+        },
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/vercel-labs/agent-skills/web-design-guidelines",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.149226Z",
+          "excerpt": "公开排行榜第 10 个发现信号。"
+        }
+      ],
+      "discovered_at": "2026-08-05T03:42:59.146209Z",
+      "updated_at": "2026-08-05T03:42:59.149277Z",
+      "source_count": 1,
+      "score": 54.6
+    },
+    {
+      "id": "agent-browser-634fb797",
+      "name": "agent browser",
+      "name_zh": "",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：agent-browser。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+      "repository": "https://github.com/vercel-labs/agent-browser",
+      "category": "agents-automation",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
+      "install": {
+        "method": "npx-skills",
+        "command": "npx skills add vercel-labs/agent-browser",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
+      ],
+      "tags": [
+        "Agent Skill",
+        "Skills.sh"
+      ],
+      "aliases": [
+        "agent-browser"
+      ],
+      "community_signals": {
+        "skills_sh_rank": 5
+      },
+      "evidence": [
+        {
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/vercel-labs/agent-browser/agent-browser",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.144024Z",
+          "excerpt": "公开排行榜第 5 个发现信号。"
+        }
+      ],
+      "discovered_at": "2026-08-05T03:42:59.144074Z",
+      "updated_at": "2026-08-05T03:42:59.144075Z",
+      "source_count": 1,
+      "score": 53.95
+    },
+    {
+      "id": "anthropic-agent-skills-edf04ead",
+      "name": "Anthropic Agent Skills",
+      "name_zh": "Anthropic Agent Skills",
+      "summary_zh": "Anthropic 公开的 Agent Skills 示例与文档处理技能集合。",
+      "use_case_zh": "学习 Skill 结构，或挑选经过官方维护的文档、表格与演示工作流。",
+      "homepage": "https://github.com/anthropics/skills",
+      "repository": "https://github.com/anthropics/skills",
+      "category": "codex-ecosystem",
+      "kind": "skill",
+      "pricing": "free",
+      "status": "verified",
+      "maturity": "stable",
       "maintenance": "active",
       "permission_risk": "high",
-      "risk_note_zh": "由于包含 Computer Use 与 Code Agent 能力，可能涉及桌面控制、文件读取和代码执行等高权限操作，使用前需人工确认授权边界与数据安全策略。",
+      "risk_note_zh": "Skill 可能调用脚本和工具；即使来源官方也要先审阅范围。",
       "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "method": "npx-skills",
+        "command": "npx skills add anthropics/skills",
+        "note_zh": "仅供复制；具体 Skill 的安装必须先明确确认。",
         "requires_confirmation": true
       },
       "compatibility": [
-        "依项目文档"
+        "Agent Skills compatible clients",
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
       ],
       "tags": [
-        "ai-coding",
-        "agent-teams",
-        "agentic",
-        "agentic-os",
-        "agentic-runtime",
-        "ai-ide",
-        "ai-sdk",
-        "computer-use-agent"
+        "Agent Skills",
+        "Documents",
+        "Examples",
+        "Agent Skill",
+        "Skills.sh"
       ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 1411,
-        "github_forks": 163,
-        "open_issues": 70
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/GCWing/BitFun",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:14.399559Z",
-          "excerpt": "1411 stars；最近推送 2026-08-04。"
-        }
+      "aliases": [
+        "frontend-design"
       ],
-      "discovered_at": "2026-02-02T09:52:10Z",
-      "updated_at": "2026-08-04T03:47:08Z",
-      "source_count": 1,
-      "score": 80.04
-    },
-    {
-      "id": "mcp-observatory-9e369136",
-      "name": "mcp-observatory",
-      "name_zh": "",
-      "summary_zh": "CI-native security testing for MCP servers. Attack simulation, schema drift detection, and health scoring before agents depend on them.",
-      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/KryptosAI/mcp-observatory",
-      "repository": "https://github.com/KryptosAI/mcp-observatory",
-      "category": "codex-ecosystem",
-      "kind": "library",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "experimental",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "依项目文档"
-      ],
-      "tags": [
-        "mcp-server",
-        "agent-security",
-        "ai-agent",
-        "ai-security",
-        "ai-supply-chain",
-        "cli",
-        "code-scanning",
-        "developer-tools",
-        "github-action"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 191,
-        "github_forks": 23,
-        "open_issues": 54
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/KryptosAI/mcp-observatory",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.312968Z",
-          "excerpt": "191 stars；最近推送 2026-08-04。"
-        }
-      ],
-      "discovered_at": "2026-03-19T00:28:30Z",
-      "updated_at": "2026-08-04T03:46:37Z",
-      "source_count": 1,
-      "score": 78.51
-    },
-    {
-      "id": "n8n-29e936f8",
-      "name": "n8n",
-      "name_zh": "n8n 工作流自动化",
-      "summary_zh": "可自托管的可视化工作流自动化平台，支持 AI 节点和大量应用连接器。",
-      "use_case_zh": "把定时任务、API、数据库与 Agent 步骤串成可观察流程。",
-      "homepage": "https://github.com/n8n-io/n8n",
-      "repository": "https://github.com/n8n-io/n8n",
-      "category": "agents-automation",
-      "kind": "platform",
-      "pricing": "freemium",
-      "status": "verified",
-      "maturity": "mature",
-      "maintenance": "active",
-      "permission_risk": "critical",
-      "risk_note_zh": "工作流可能持有多个系统的凭据和写权限；需隔离密钥并限制节点。",
-      "install": {
-        "method": "npm",
-        "command": "npx n8n",
-        "note_zh": "仅供复制；自托管前需明确确认并完成安全配置。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "Node.js",
-        "Docker",
-        "Cloud",
-        "依项目文档"
-      ],
-      "tags": [
-        "Automation",
-        "Workflow",
-        "Agents",
-        "mcp-server",
-        "ai",
-        "apis",
-        "cli",
-        "data-flow",
-        "development",
-        "integration-framework",
-        "integrations"
-      ],
-      "aliases": [],
       "community_signals": {
         "official_repo": 1,
-        "github_stars": 199243,
-        "github_forks": 59883,
-        "open_issues": 1406
+        "skills_sh_rank": 3
       },
       "evidence": [
         {
           "source_id": "curated",
-          "source_name": "n8n",
-          "url": "https://github.com/n8n-io/n8n",
+          "source_name": "Anthropic Skills",
+          "url": "https://github.com/anthropics/skills",
           "evidence_type": "official-repository",
-          "captured_at": "2026-08-04T03:47:13.763395Z",
-          "excerpt": "n8n 官方开源仓库。"
+          "captured_at": "2026-08-05T03:42:58.032547Z",
+          "excerpt": "Anthropic 官方 Agent Skills 仓库。"
         },
         {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/n8n-io/n8n",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:14.768677Z",
-          "excerpt": "199243 stars；最近推送 2026-08-04。"
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/anthropics/skills/frontend-design",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.141761Z",
+          "excerpt": "公开排行榜第 3 个发现信号。"
         }
       ],
-      "discovered_at": "2019-06-01T00:00:00Z",
-      "updated_at": "2026-08-04T03:46:27Z",
+      "discovered_at": "2025-10-16T00:00:00Z",
+      "updated_at": "2026-08-05T03:42:59.141814Z",
       "source_count": 2,
-      "score": 120.62
+      "score": 109.26
     },
     {
-      "id": "bitrouter-b27201e3",
-      "name": "bitrouter",
+      "id": "find-skills-81796f0a",
+      "name": "find skills",
       "name_zh": "",
-      "summary_zh": "The model router that continuously improve your agentic workflows, works with any harnesses, any models, any loops.",
-      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/bitrouter/bitrouter",
-      "repository": "https://github.com/bitrouter/bitrouter",
-      "category": "agents-automation",
-      "kind": "library",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "experimental",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "依项目文档"
-      ],
-      "tags": [
-        "ai-agent",
-        "acp",
-        "agent-guardrails",
-        "agent-harness",
-        "agent-observability",
-        "anthropic-compatible",
-        "api-gateway",
-        "claude-code"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 216,
-        "github_forks": 14,
-        "open_issues": 10
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/bitrouter/bitrouter",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.314177Z",
-          "excerpt": "216 stars；最近推送 2026-08-04。"
-        }
-      ],
-      "discovered_at": "2026-03-06T20:04:01Z",
-      "updated_at": "2026-08-04T03:46:16Z",
-      "source_count": 1,
-      "score": 76.38
-    },
-    {
-      "id": "leankg-9497c69c",
-      "name": "LeanKG",
-      "name_zh": "",
-      "summary_zh": "LeanKG: Stop Burning Tokens. Start Coding Lean.",
-      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/FreePeak/LeanKG",
-      "repository": "https://github.com/FreePeak/LeanKG",
+      "summary_zh": "Skills.sh 排行榜中的 Agent Skill：find-skills。",
+      "use_case_zh": "为兼容的编码 Agent 增加可复用流程知识；使用前应阅读完整 SKILL.md。",
+      "homepage": "https://skills.sh/vercel-labs/skills/find-skills",
+      "repository": "https://github.com/vercel-labs/skills",
       "category": "codex-ecosystem",
-      "kind": "library",
+      "kind": "skill",
       "pricing": "free",
       "status": "watch",
-      "maturity": "experimental",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "maturity": "unknown",
+      "maintenance": "unknown",
+      "permission_risk": "high",
+      "risk_note_zh": "Skill 是可执行工作流说明，可能要求脚本、联网或外部工具；安装前必须人工审阅。",
       "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "method": "npx-skills",
+        "command": "npx skills add vercel-labs/skills",
+        "note_zh": "排行榜命令仅供复制；实际安装必须先获得用户明确确认。",
         "requires_confirmation": true
       },
       "compatibility": [
-        "依项目文档"
+        "Codex",
+        "Claude Code",
+        "兼容 Agent Skills 的客户端"
       ],
       "tags": [
-        "mcp-server",
-        "ai-memory",
-        "codebase-memory",
-        "codebase-memory-mcp",
-        "concise-context",
-        "context-engineer",
-        "graph-database",
-        "graph-engineer",
-        "knowledge-graph"
+        "Agent Skill",
+        "Skills.sh"
       ],
-      "aliases": [],
+      "aliases": [
+        "find-skills"
+      ],
       "community_signals": {
-        "github_stars": 212,
-        "github_forks": 27,
-        "open_issues": 9
+        "skills_sh_rank": 1
       },
       "evidence": [
         {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/FreePeak/LeanKG",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:14.769826Z",
-          "excerpt": "212 stars；最近推送 2026-08-04。"
+          "source_id": "skills-sh",
+          "source_name": "Skills.sh",
+          "url": "https://skills.sh/vercel-labs/skills/find-skills",
+          "evidence_type": "community-leaderboard",
+          "captured_at": "2026-08-05T03:42:59.139432Z",
+          "excerpt": "公开排行榜第 1 个发现信号。"
         }
       ],
-      "discovered_at": "2026-04-13T16:46:35Z",
-      "updated_at": "2026-08-04T03:46:01Z",
+      "discovered_at": "2026-08-05T03:42:59.139495Z",
+      "updated_at": "2026-08-05T03:42:59.139496Z",
       "source_count": 1,
-      "score": 76.94
+      "score": 52.75
     },
     {
-      "id": "edt-mcp-5a05b9c8",
-      "name": "EDT-MCP",
+      "id": "open-science-ff17e97c",
+      "name": "open-science",
       "name_zh": "",
-      "summary_zh": "EDT-MCP 是一个面向 1C:EDT 开发环境的 MCP 服务器，用于将 AI 能力集成到 1C:EDT 中。",
-      "use_case_zh": "适合开发者在 1C:EDT 编辑器内通过 MCP 协议调用 AI 辅助编程能力。",
-      "homepage": "https://github.com/DitriXNew/EDT-MCP",
-      "repository": "https://github.com/DitriXNew/EDT-MCP",
-      "category": "ai-coding",
-      "kind": "library",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "experimental",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "需人工确认该 MCP 服务器的实际权限范围；MCP 工具通常可读取或修改项目文件，建议在隔离环境中运行并审查其工具定义。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "依项目文档"
-      ],
-      "tags": [
-        "mcp-server",
-        "1c-enterprise",
-        "edt",
-        "mcp"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 234,
-        "github_forks": 51,
-        "open_issues": 30
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/DitriXNew/EDT-MCP",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:14.771150Z",
-          "excerpt": "234 stars；最近推送 2026-08-04。"
-        }
-      ],
-      "discovered_at": "2026-01-03T05:33:11Z",
-      "updated_at": "2026-08-04T03:46:00Z",
-      "source_count": 1,
-      "score": 78.95
-    },
-    {
-      "id": "rulesync-0613256a",
-      "name": "rulesync",
-      "name_zh": "",
-      "summary_zh": "A Utility CLI for AI Coding Agents",
+      "summary_zh": "Open Science is an open-source, local-first, model-agnostic AI research workbench for scientific discovery.",
       "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/dyoshikawa/rulesync",
-      "repository": "https://github.com/dyoshikawa/rulesync",
-      "category": "ai-coding",
-      "kind": "library",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "beta",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "依项目文档"
-      ],
-      "tags": [
-        "ai-coding",
-        "ai",
-        "ai-agents",
-        "llm",
-        "mcp",
-        "rules",
-        "skills"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 1281,
-        "github_forks": 142,
-        "open_issues": 31
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/dyoshikawa/rulesync",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:14.398346Z",
-          "excerpt": "1281 stars；最近推送 2026-08-04。"
-        }
-      ],
-      "discovered_at": "2025-06-18T13:27:05Z",
-      "updated_at": "2026-08-04T03:45:53Z",
-      "source_count": 1,
-      "score": 81.92
-    },
-    {
-      "id": "ml-capsule-94978b0c",
-      "name": "ML-CaPsule",
-      "name_zh": "",
-      "summary_zh": "ML-capsule is a Project for beginners and experienced data science Enthusiasts who don't have a mentor or guidance and wish to learn Machine learning. Using our repo they can learn ML, DL, and many related technologies with different real-world projects and become Interview ready.",
-      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/Niketkumardheeryan/ML-CaPsule",
-      "repository": "https://github.com/Niketkumardheeryan/ML-CaPsule",
+      "homepage": "https://github.com/aipoch/open-science",
+      "repository": "https://github.com/aipoch/open-science",
       "category": "data-analysis",
       "kind": "library",
       "pricing": "free",
@@ -1490,202 +1043,370 @@
       ],
       "tags": [
         "data-analysis",
-        "analytics",
-        "data-science",
-        "data-visualization",
-        "datascience",
-        "deep-learning",
-        "deep-neural-networks",
-        "deployment"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 680,
-        "github_forks": 743,
-        "open_issues": 564
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/Niketkumardheeryan/ML-CaPsule",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.965052Z",
-          "excerpt": "680 stars；最近推送 2026-08-04。"
-        }
-      ],
-      "discovered_at": "2020-09-01T16:25:00Z",
-      "updated_at": "2026-08-04T03:45:40Z",
-      "source_count": 1,
-      "score": 86.14
-    },
-    {
-      "id": "devops-ai-guidelines-ec19f3ef",
-      "name": "devops-ai-guidelines",
-      "name_zh": "",
-      "summary_zh": "First AI Journey for DevOps - with comprehensive learning paths, practical tips, and enterprise guidelines",
-      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/VersusControl/devops-ai-guidelines",
-      "repository": "https://github.com/VersusControl/devops-ai-guidelines",
-      "category": "agents-automation",
-      "kind": "library",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "beta",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "依项目文档"
-      ],
-      "tags": [
         "ai-agent",
-        "agentic-ai",
-        "ai",
-        "amazon-web-services",
-        "artificial-intelligence",
-        "aws",
-        "cloud",
-        "copilot"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 1382,
-        "github_forks": 363,
-        "open_issues": 0
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/VersusControl/devops-ai-guidelines",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.315570Z",
-          "excerpt": "1382 stars；最近推送 2026-08-04。"
-        }
-      ],
-      "discovered_at": "2025-07-20T11:15:56Z",
-      "updated_at": "2026-08-04T03:45:25Z",
-      "source_count": 1,
-      "score": 79.25
-    },
-    {
-      "id": "awesome-agentic-ai-zh-1a42402f",
-      "name": "awesome-agentic-ai-zh",
-      "name_zh": "",
-      "summary_zh": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples. 中文 AI agent 學習地圖。",
-      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-      "repository": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-      "category": "agents-automation",
-      "kind": "library",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "beta",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "依项目文档"
-      ],
-      "tags": [
-        "ai-agent",
-        "agentic-ai",
-        "agentic-workflows",
-        "ai-agents",
-        "awesome-list",
-        "chinese-llm",
-        "claude-code",
-        "claude-skills"
-      ],
-      "aliases": [],
-      "community_signals": {
-        "github_stars": 5042,
-        "github_forks": 673,
-        "open_issues": 1
-      },
-      "evidence": [
-        {
-          "source_id": "github",
-          "source_name": "GitHub Search",
-          "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
-          "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.316751Z",
-          "excerpt": "5042 stars；最近推送 2026-08-04。"
-        }
-      ],
-      "discovered_at": "2026-05-04T22:18:51Z",
-      "updated_at": "2026-08-04T03:45:10Z",
-      "source_count": 1,
-      "score": 80.82
-    },
-    {
-      "id": "oh-my-pi-4c6090f1",
-      "name": "oh-my-pi",
-      "name_zh": "",
-      "summary_zh": "⌥ AI Coding agent for the terminal — hash-anchored edits, optimized tool harness, LSP, Python, browser, subagents, and more",
-      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
-      "homepage": "https://github.com/can1357/oh-my-pi",
-      "repository": "https://github.com/can1357/oh-my-pi",
-      "category": "agents-automation",
-      "kind": "library",
-      "pricing": "free",
-      "status": "watch",
-      "maturity": "beta",
-      "maintenance": "active",
-      "permission_risk": "medium",
-      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
-      "install": {
-        "method": "manual",
-        "command": "",
-        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
-        "requires_confirmation": true
-      },
-      "compatibility": [
-        "依项目文档"
-      ],
-      "tags": [
-        "ai-agent",
-        "ai-coding-agent",
-        "anthropic",
-        "bun",
-        "claude",
-        "cli",
-        "coding-assistant",
+        "ai-for-science",
+        "bioinformatics",
+        "biology",
+        "desktop-app",
+        "electron",
         "llm"
       ],
       "aliases": [],
       "community_signals": {
-        "github_stars": 21622,
-        "github_forks": 2060,
-        "open_issues": 1007
+        "github_stars": 1546,
+        "github_forks": 126,
+        "open_issues": 16
       },
       "evidence": [
         {
           "source_id": "github",
           "source_name": "GitHub Search",
-          "url": "https://github.com/can1357/oh-my-pi",
+          "url": "https://github.com/aipoch/open-science",
           "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.318241Z",
-          "excerpt": "21622 stars；最近推送 2026-08-04。"
+          "captured_at": "2026-08-05T03:43:00.796795Z",
+          "excerpt": "1546 stars；最近推送 2026-08-05。"
         }
       ],
-      "discovered_at": "2025-12-31T14:01:28Z",
-      "updated_at": "2026-08-04T03:44:55Z",
+      "discovered_at": "2026-07-03T02:50:10Z",
+      "updated_at": "2026-08-05T03:42:58Z",
       "source_count": 1,
-      "score": 88.51
+      "score": 81.31
+    },
+    {
+      "id": "vm0-fe2d8cc5",
+      "name": "vm0",
+      "name_zh": "",
+      "summary_zh": "Zero, your trustworthy AI teammate for real work.",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/vm0-ai/vm0",
+      "repository": "https://github.com/vm0-ai/vm0",
+      "category": "agents-automation",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "ai-agent",
+        "agentic-workflow",
+        "ai-runtime",
+        "ai-sandbox",
+        "claude-code",
+        "dev-tools",
+        "sandbox"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 1141,
+        "github_forks": 68,
+        "open_issues": 87
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/vm0-ai/vm0",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:43:00.004918Z",
+          "excerpt": "1141 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2025-11-14T03:27:22Z",
+      "updated_at": "2026-08-05T03:42:43Z",
+      "source_count": 1,
+      "score": 82.1
+    },
+    {
+      "id": "worldmonitor-59c46d28",
+      "name": "worldmonitor",
+      "name_zh": "",
+      "summary_zh": "Real-time global intelligence dashboard. AI-powered news aggregation, geopolitical monitoring, and infrastructure tracking in a unified situational awareness interface",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/koala73/worldmonitor",
+      "repository": "https://github.com/koala73/worldmonitor",
+      "category": "codex-ecosystem",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "mcp-server",
+        "agent",
+        "ai",
+        "dashboard",
+        "geopolitics",
+        "mcp",
+        "monitoring",
+        "news"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 78874,
+        "github_forks": 11782,
+        "open_issues": 328
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/koala73/worldmonitor",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:42:59.512058Z",
+          "excerpt": "78874 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2026-01-08T17:26:06Z",
+      "updated_at": "2026-08-05T03:42:00Z",
+      "source_count": 1,
+      "score": 87.29
+    },
+    {
+      "id": "cherry-studio-3bb02ee1",
+      "name": "cherry-studio",
+      "name_zh": "",
+      "summary_zh": "Cherry Studio 是一款 AI 生产力工具，提供智能聊天、自主代理和 300+ 助手，并统一接入前沿大语言模型。",
+      "use_case_zh": "适合需要在一个桌面应用中集中使用多种 AI 模型和助手来提升日常工作效率的场景。",
+      "homepage": "https://github.com/CherryHQ/cherry-studio",
+      "repository": "https://github.com/CherryHQ/cherry-studio",
+      "category": "productivity-learning",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "需要人工确认该软件如何处理 API 密钥和本地数据，避免密钥泄露或隐私数据被上传至第三方服务。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "ai-agent",
+        "agent-skills",
+        "awesome-skills",
+        "claude-code",
+        "codex",
+        "deepseek",
+        "hermes-agent",
+        "openclaw"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 49416,
+        "github_forks": 4695,
+        "open_issues": 1215
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/CherryHQ/cherry-studio",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:43:00.002127Z",
+          "excerpt": "49416 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2024-05-24T01:56:26Z",
+      "updated_at": "2026-08-05T03:41:33Z",
+      "source_count": 1,
+      "score": 88.71
+    },
+    {
+      "id": "inspector-243bbb56",
+      "name": "inspector",
+      "name_zh": "",
+      "summary_zh": "Testing and evaluation platform to chat, inspect, and debug MCP servers, MCP apps, and ChatGPT apps.",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/MCPJam/inspector",
+      "repository": "https://github.com/MCPJam/inspector",
+      "category": "codex-ecosystem",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "mcp-server",
+        "anthropic",
+        "chatgpt",
+        "cicd",
+        "debugger",
+        "evals",
+        "evaluation",
+        "inspector",
+        "mcp"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 2111,
+        "github_forks": 255,
+        "open_issues": 161
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/MCPJam/inspector",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:42:59.513767Z",
+          "excerpt": "2111 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2025-05-23T15:56:00Z",
+      "updated_at": "2026-08-05T03:41:32Z",
+      "source_count": 1,
+      "score": 84.54
+    },
+    {
+      "id": "qwen-code-f7902838",
+      "name": "qwen-code",
+      "name_zh": "",
+      "summary_zh": "An open-source AI coding agent that lives in your terminal.",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/QwenLM/qwen-code",
+      "repository": "https://github.com/QwenLM/qwen-code",
+      "category": "ai-coding",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "ai-coding",
+        "agentic",
+        "ai",
+        "ai-agent",
+        "cli",
+        "coding-agent",
+        "developer-tools",
+        "llm"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 26705,
+        "github_forks": 2782,
+        "open_issues": 833
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/QwenLM/qwen-code",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:42:58.680117Z",
+          "excerpt": "26705 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2025-06-26T01:37:46Z",
+      "updated_at": "2026-08-05T03:41:07Z",
+      "source_count": 1,
+      "score": 88.3
+    },
+    {
+      "id": "superset-ed761cba",
+      "name": "superset",
+      "name_zh": "",
+      "summary_zh": "Apache Superset is a Data Visualization and Data Exploration Platform",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/apache/superset",
+      "repository": "https://github.com/apache/superset",
+      "category": "data-analysis",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "data-analysis",
+        "analytics",
+        "apache",
+        "apache-superset",
+        "asf",
+        "bi",
+        "business-analytics",
+        "business-intelligence"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 74146,
+        "github_forks": 18034,
+        "open_issues": 602
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/apache/superset",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:43:00.795364Z",
+          "excerpt": "74146 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2015-07-21T18:55:34Z",
+      "updated_at": "2026-08-05T03:41:07Z",
+      "source_count": 1,
+      "score": 87.95
     },
     {
       "id": "research-units-pipeline-skills-bc82d625",
@@ -1725,7 +1446,7 @@
       ],
       "aliases": [],
       "community_signals": {
-        "github_stars": 498,
+        "github_stars": 496,
         "github_forks": 38,
         "open_issues": 0
       },
@@ -1735,14 +1456,127 @@
           "source_name": "GitHub Search",
           "url": "https://github.com/WILLOSCAR/research-units-pipeline-skills",
           "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.619249Z",
-          "excerpt": "498 stars；最近推送 2026-08-04。"
+          "captured_at": "2026-08-05T03:43:00.377302Z",
+          "excerpt": "496 stars；最近推送 2026-08-05。"
         }
       ],
       "discovered_at": "2026-01-07T16:39:03Z",
-      "updated_at": "2026-08-04T03:44:34Z",
+      "updated_at": "2026-08-05T03:41:04Z",
       "source_count": 1,
       "score": 75.72
+    },
+    {
+      "id": "iva-dbce12c9",
+      "name": "iva",
+      "name_zh": "",
+      "summary_zh": "AI assistant in Telegram that remembers everything and helps you run your life. Self-hosted in one command.",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/smixs/iva",
+      "repository": "https://github.com/smixs/iva",
+      "category": "agents-automation",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "experimental",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "ai-agent",
+        "agent",
+        "ai-assistant",
+        "deepseek",
+        "knowledge-graph",
+        "llm",
+        "local-first",
+        "long-term-memory"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 128,
+        "github_forks": 21,
+        "open_issues": 10
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/smixs/iva",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:43:00.006156Z",
+          "excerpt": "128 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2026-06-18T05:29:38Z",
+      "updated_at": "2026-08-05T03:40:47Z",
+      "source_count": 1,
+      "score": 76.24
+    },
+    {
+      "id": "cloudbase-ai-toolkit-45759bbb",
+      "name": "CloudBase-AI-Toolkit",
+      "name_zh": "",
+      "summary_zh": "Backend for AI coding agents on CloudBase — database, auth, functions via Plugin, Skills & MCP.",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit",
+      "repository": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit",
+      "category": "codex-ecosystem",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "mcp-server",
+        "agent-skills",
+        "ai",
+        "aicoding",
+        "claude-code",
+        "cloudbase",
+        "cursor",
+        "database",
+        "mcp"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 1066,
+        "github_forks": 132,
+        "open_issues": 1
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/TencentCloudBase/CloudBase-AI-Toolkit",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:42:59.514981Z",
+          "excerpt": "1066 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2025-05-23T08:31:26Z",
+      "updated_at": "2026-08-05T03:40:42Z",
+      "source_count": 1,
+      "score": 78.63
     },
     {
       "id": "misakanet-adda5dc5",
@@ -1781,9 +1615,9 @@
       ],
       "aliases": [],
       "community_signals": {
-        "github_stars": 387,
-        "github_forks": 143,
-        "open_issues": 17
+        "github_stars": 395,
+        "github_forks": 146,
+        "open_issues": 15
       },
       "evidence": [
         {
@@ -1791,14 +1625,183 @@
           "source_name": "GitHub Search",
           "url": "https://github.com/Ikalus1988/MisakaNet",
           "evidence_type": "repository",
-          "captured_at": "2026-08-04T03:47:15.319435Z",
-          "excerpt": "387 stars；最近推送 2026-08-04。"
+          "captured_at": "2026-08-05T03:43:00.000878Z",
+          "excerpt": "395 stars；最近推送 2026-08-05。"
         }
       ],
       "discovered_at": "2026-04-29T15:16:22Z",
-      "updated_at": "2026-08-04T03:43:46Z",
+      "updated_at": "2026-08-05T03:40:18Z",
       "source_count": 1,
-      "score": 80.01
+      "score": 79.92
+    },
+    {
+      "id": "cindy-d4d98310",
+      "name": "cindy",
+      "name_zh": "",
+      "summary_zh": "Consider it done. The open-source AI agent that works out of the box · 想到，就能做到。开源、开箱即用的 AI Agent。",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/makecindy/cindy",
+      "repository": "https://github.com/makecindy/cindy",
+      "category": "agents-automation",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "beta",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "ai-agent",
+        "agent",
+        "ai-assistant",
+        "android",
+        "claude-code",
+        "codex",
+        "electron",
+        "ios"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 1725,
+        "github_forks": 212,
+        "open_issues": 485
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/makecindy/cindy",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:43:00.003751Z",
+          "excerpt": "1725 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2026-07-22T17:49:34Z",
+      "updated_at": "2026-08-05T03:40:04Z",
+      "source_count": 1,
+      "score": 85.54
+    },
+    {
+      "id": "aidevops-cdfa27fb",
+      "name": "aidevops",
+      "name_zh": "",
+      "summary_zh": "aidevops 是一个开源优先的 AI 代理自动化工具栈，面向应用、业务和个人开发的 DevOps 流程，强调 token 高效。",
+      "use_case_zh": "适合用 AI 代理自动化处理仓库运维、部署和开发流水线等 DevOps 任务。",
+      "homepage": "https://github.com/marcusquinn/aidevops",
+      "repository": "https://github.com/marcusquinn/aidevops",
+      "category": "agents-automation",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "experimental",
+      "maintenance": "active",
+      "permission_risk": "high",
+      "risk_note_zh": "需要人工确认其使用的 Git token 权限范围、是否可读写代码仓库、是否执行部署命令，并检查日志与密钥处理方式。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "ai-coding",
+        "agents",
+        "agents-md",
+        "ai",
+        "ai-agents",
+        "ai-assistant",
+        "ai-assistants",
+        "ai-assisted-development",
+        "ai-code-review"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 362,
+        "github_forks": 59,
+        "open_issues": 16
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/marcusquinn/aidevops",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:42:58.683122Z",
+          "excerpt": "362 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2025-11-09T05:15:11Z",
+      "updated_at": "2026-08-05T03:39:08Z",
+      "source_count": 1,
+      "score": 75.92
+    },
+    {
+      "id": "funasr-b5ae9c8d",
+      "name": "FunASR",
+      "name_zh": "",
+      "summary_zh": "Open-source speech recognition toolkit for training, inference, streaming ASR, VAD, punctuation, speaker diarization pipelines, and OpenAI-compatible/MCP serving.",
+      "use_case_zh": "作为候选开源工具进一步核查文档、权限与实际工作流价值。",
+      "homepage": "https://github.com/modelscope/FunASR",
+      "repository": "https://github.com/modelscope/FunASR",
+      "category": "codex-ecosystem",
+      "kind": "library",
+      "pricing": "free",
+      "status": "watch",
+      "maturity": "stable",
+      "maintenance": "active",
+      "permission_risk": "medium",
+      "risk_note_zh": "自动发现项目；安装前需人工检查维护者、依赖、许可证和权限。",
+      "install": {
+        "method": "manual",
+        "command": "",
+        "note_zh": "仅提供仓库链接；不自动推断或执行安装命令。",
+        "requires_confirmation": true
+      },
+      "compatibility": [
+        "依项目文档"
+      ],
+      "tags": [
+        "mcp-server",
+        "asr",
+        "audio",
+        "chinese",
+        "emotion-recognition",
+        "funasr",
+        "multilingual-asr",
+        "openai-compatible-api"
+      ],
+      "aliases": [],
+      "community_signals": {
+        "github_stars": 19643,
+        "github_forks": 1970,
+        "open_issues": 3
+      },
+      "evidence": [
+        {
+          "source_id": "github",
+          "source_name": "GitHub Search",
+          "url": "https://github.com/modelscope/FunASR",
+          "evidence_type": "repository",
+          "captured_at": "2026-08-05T03:42:59.517525Z",
+          "excerpt": "19643 stars；最近推送 2026-08-05。"
+        }
+      ],
+      "discovered_at": "2022-11-24T02:28:11Z",
+      "updated_at": "2026-08-05T03:36:09Z",
+      "source_count": 1,
+      "score": 82.51
     }
   ]
 }
